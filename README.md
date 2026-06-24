@@ -4,9 +4,9 @@ A new creative project for Hammood art compositions.
 
 ## Project structure
 
-- `gallery.html` — simple starter gallery page
-- `assets/` — place image and media files here
-- `sketches/` — save drafts, sketches, and art notes
+- `gallery.html` simple starter gallery page
+- `assets/` place image and media files here
+- `sketches/` save drafts, sketches, and art notes
 
 ## Getting started
 

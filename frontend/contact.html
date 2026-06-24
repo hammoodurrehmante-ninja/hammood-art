@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Hammood Ur Rehman | Lead Product Designer</title>
+  <meta name="description" content="Have a project in mind? Get in touch with Hammood Ur Rehman Lead Product Designer specializing in SaaS, ERP, mobile apps, and AI-powered product design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb-2" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">HUR<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html"   class="nav-link">Home</a></li>
+      <li><a href="work.html"    class="nav-link">Work</a></li>
+      <li><a href="about.html"   class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <a href="mailto:hammoodchand@gmail.com" class="nav-cta-btn">Email Me</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html"   class="nav-link">Home</a>
+    <a href="work.html"    class="nav-link">Work</a>
+    <a href="about.html"   class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="label">Get in Touch</span>
+        <h1 class="page-hero-title">Have a project <em>in mind?</em></h1>
+        <p class="page-hero-desc">Whether you need a product designed from scratch, a dashboard that actually makes sense, or just want to talk through an idea I'm here. Let's build it right.</p>
+      </div>
+    </div>
+
+    <main class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: Info -->
+          <div class="contact-info-col reveal">
+            <span class="label">Direct email</span>
+            <a href="mailto:hammoodchand@gmail.com?subject=Project%20Inquiry" class="contact-email-link">
+              hammoodchand@gmail.com →
+            </a>
+
+            <span class="label" style="margin-bottom: 1rem;">Connect</span>
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/hammood-ur-rehman/" target="_blank" rel="noopener" class="contact-social">
+                <span class="soc-icon">in</span>
+                LinkedIn
+              </a>
+              <a href="https://www.behance.net/hammood" target="_blank" rel="noopener" class="contact-social">
+                <span class="soc-icon">Bē</span>
+                Behance Portfolio
+              </a>
+              <a href="assets/resume/Hammood-Resume.pdf" download class="contact-social">
+                <span class="soc-icon">↓</span>
+                Download Resume
+              </a>
+            </div>
+
+            <div style="margin-top: 2.5rem; padding: 1.5rem; background: var(--bg-2); border: 1px solid var(--b1); border-radius: var(--rad-lg); position: relative; overflow: hidden;">
+              <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent) 50%, transparent);"></div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+                <span class="hero-badge-dot"></span>
+                <span style="font-size: 0.78rem; font-weight: 600; color: var(--t1);">Open to new projects</span>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--t2); line-height: 1.65;">
+                I'm currently taking on new design projects. Typical response time is within 24 hours.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="reveal rd1">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Your Name</label>
+                  <input class="form-input" type="text" id="name" name="name" placeholder="What should I call you?" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <input class="form-input" type="text" id="subject" name="subject" placeholder="What's this about?" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Your Message</label>
+                <textarea class="form-textarea" id="message" name="message" rows="6" placeholder="Tell me about your project, idea, or whatever's on your mind..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit" id="formSubmit">
+                <span id="btnLabel">Send Message</span>
+                <span id="btnLoading" style="display:none;">Sending...</span>
+              </button>
+              <p class="form-status" id="formStatus"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-copy">© 2026 Hammood Ur Rehman Lead Product Designer</p>
+          <div class="footer-links">
+            <a href="work.html"    class="footer-link">Work</a>
+            <a href="about.html"   class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="mailto:hammoodchand@gmail.com" class="footer-link">Email</a>
+            <a href="https://www.behance.net/hammood" target="_blank" rel="noopener" class="footer-link">Behance</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

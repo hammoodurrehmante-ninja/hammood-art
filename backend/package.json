@@ -1,7 +1,7 @@
 {
   "name": "hammood-portfolio-backend",
   "version": "1.0.0",
-  "description": "Express server for Hammood Ur Rehman portfolio — serves frontend and handles contact form.",
+  "description": "Express server for Hammood Ur Rehman portfolio serves frontend and handles contact form.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

@@ -18,7 +18,7 @@ function esc(str) {
     .replace(/'/g, '&#39;');
 }
 
-// POST /api/contact — save submission + optionally email
+// POST /api/contact save submission + optionally email
 router.post('/', async (req, res) => {
   const { name, email, subject, message } = req.body;
 
@@ -59,7 +59,7 @@ router.post('/', async (req, res) => {
     return res.status(500).json({ error: 'Failed to save message. Please try again.' });
   }
 
-  // Send email notification — only if Gmail credentials are configured
+  // Send email notification only if Gmail credentials are configured
   if (process.env.EMAIL_USER && process.env.EMAIL_PASS &&
       process.env.EMAIL_USER !== 'your-gmail@gmail.com') {
     try {
@@ -84,14 +84,14 @@ router.post('/', async (req, res) => {
       });
     } catch (err) {
       console.error('Mail error:', err.message);
-      // DB already saved — still return success
+      // DB already saved still return success
     }
   }
 
   res.json({ success: true });
 });
 
-// GET /api/contact/submissions — protected by API key
+// GET /api/contact/submissions protected by API key
 router.get('/submissions', async (req, res) => {
   const key = req.headers['x-api-key'];
   if (!key || key !== process.env.ADMIN_API_KEY) {

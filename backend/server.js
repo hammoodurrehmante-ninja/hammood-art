@@ -26,7 +26,7 @@ app.use(helmet({
   crossOriginEmbedderPolicy: false,
 }));
 
-// CORS — only allow the actual site origin in production
+// CORS only allow the actual site origin in production
 const allowedOrigins = [
   'http://localhost:3000',
   process.env.SITE_ORIGIN,
@@ -41,7 +41,7 @@ app.use(cors({
   methods: ['GET', 'POST'],
 }));
 
-// Body size limit — prevent oversized payloads
+// Body size limit prevent oversized payloads
 app.use(express.json({ limit: '16kb' }));
 
 // Rate limit the contact API
