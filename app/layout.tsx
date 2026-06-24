@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CustomCursor from '@/components/CustomCursor'
 import ScrollRevealInit from '@/components/ScrollRevealInit'
 import FloatingWidgets from '@/components/FloatingWidgets'
+import AnalyticsTracker from '@/components/AnalyticsTracker'
 
 const BASE = 'https://hammood.com'
 const OG_IMAGE = `${BASE}/assets/images/og-image.jpg`
@@ -145,6 +146,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="bg-orb-2" aria-hidden="true" />
         <CustomCursor />
         <ScrollRevealInit />
+        <AnalyticsTracker />
         <FloatingWidgets />
         <Nav />
         <div className="page-wrap">

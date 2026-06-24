@@ -295,12 +295,30 @@ export const PROJECTS: Project[] = [
   },
 ]
 
+import fs from 'fs'
+import path from 'path'
+
+function loadProjects(): Project[] {
+  try {
+    const file = path.join(process.cwd(), 'data', 'projects.json')
+    if (fs.existsSync(file)) {
+      return JSON.parse(fs.readFileSync(file, 'utf-8')) as Project[]
+    }
+  } catch {}
+  return PROJECTS
+}
+
 export function getProject(slug: string): Project | undefined {
-  return PROJECTS.find(p => p.slug === slug)
+  return loadProjects().find(p => p.slug === slug)
 }
 
 export function getNextProject(slug: string): Project | undefined {
-  const idx = PROJECTS.findIndex(p => p.slug === slug)
+  const projects = loadProjects()
+  const idx = projects.findIndex(p => p.slug === slug)
   if (idx === -1) return undefined
-  return PROJECTS[(idx + 1) % PROJECTS.length]
+  return projects[(idx + 1) % projects.length]
+}
+
+export function getAllProjects(): Project[] {
+  return loadProjects()
 }
