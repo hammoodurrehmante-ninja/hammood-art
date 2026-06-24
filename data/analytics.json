@@ -1,6 +1,16 @@
 {
-  "pageViews": {},
-  "dailyViews": {},
-  "totalViews": 0,
+  "pageViews": {
+    "/admin/login": 2,
+    "/admin": 1,
+    "/admin/projects": 2,
+    "/admin/projects/new": 1,
+    "/admin/projects/vedapure": 1,
+    "/admin/assets": 1,
+    "/admin/settings": 2
+  },
+  "dailyViews": {
+    "2026-06-24": 10
+  },
+  "totalViews": 10,
   "uniqueVisitors": 0
 }

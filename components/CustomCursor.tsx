@@ -1,8 +1,11 @@
 'use client'
 import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function CustomCursor() {
+  const pathname = usePathname()
   useEffect(() => {
+    if (pathname.startsWith('/admin')) return
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0
     if (isTouchDevice) return
 
@@ -49,7 +52,7 @@ export default function CustomCursor() {
       dot.remove()
       ring.remove()
     }
-  }, [])
+  }, [pathname])
 
   return null
 }

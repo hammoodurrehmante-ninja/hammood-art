@@ -1,12 +1,16 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 interface WASettings { enabled: boolean; number: string; position: string }
 
 export default function FloatingWidgets() {
+  const pathname = usePathname()
   const [visible, setVisible] = useState(false)
   const [wa, setWa] = useState<WASettings>({ enabled: true, number: '923302616738', position: 'bottom-left' })
+
+  if (pathname.startsWith('/admin')) return null
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 300)

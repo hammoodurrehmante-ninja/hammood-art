@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
 import CustomCursor from '@/components/CustomCursor'
 import ScrollRevealInit from '@/components/ScrollRevealInit'
 import FloatingWidgets from '@/components/FloatingWidgets'
 import AnalyticsTracker from '@/components/AnalyticsTracker'
+import PublicLayout from '@/components/PublicLayout'
 
 const BASE = 'https://hammood.com'
 const OG_IMAGE = `${BASE}/assets/images/og-image.jpg`
@@ -148,11 +147,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollRevealInit />
         <AnalyticsTracker />
         <FloatingWidgets />
-        <Nav />
-        <div className="page-wrap">
-          {children}
-          <Footer />
-        </div>
+        <PublicLayout>{children}</PublicLayout>
       </body>
     </html>
   )
