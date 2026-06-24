@@ -4,9 +4,11 @@ import Ticker from '@/components/Ticker'
 import Accordion from '@/components/Accordion'
 
 export const metadata: Metadata = {
-  title: 'About — Hammood Ur Rehman | Lead Product Designer',
+  title: 'About — 7+ Years Designing SaaS, ERP & AI Products',
   description:
-    '7 years building SaaS, ERP, mobile, and AI products. Learn about Hammood Ur Rehman\'s design process, experience, and skills.',
+    '7+ years building SaaS dashboards, ERP platforms, mobile apps & AI-powered products. Learn about Hammood Ur Rehman\'s design process, experience, skills & full-stack dev using AI.',
+  alternates: { canonical: 'https://hammood.com/about' },
+  openGraph: { url: 'https://hammood.com/about' },
 }
 
 const TICKER_ITEMS = [
@@ -17,7 +19,7 @@ const TICKER_ITEMS = [
 const ACCORDION_ITEMS = [
   {
     title: 'UX/UI & Product Design',
-    text: 'From discovery to developer handoff — I own the full design process. I work in Figma to create user flows, wireframes, interactive prototypes, and pixel-perfect UI that developers can actually build from without constant back-and-forth.',
+    text: 'From discovery to developer handoff I own the full design process. I work in Figma to create user flows, wireframes, interactive prototypes, and pixel-perfect UI that developers can actually build from without constant back-and-forth.',
     tags: ['Figma', 'Wireframing', 'Prototyping', 'Design Systems', 'Developer Handoff'],
   },
   {
@@ -27,17 +29,17 @@ const ACCORDION_ITEMS = [
   },
   {
     title: 'Graphic Design & Branding',
-    text: 'Strong graphic design roots — I handle logos, brand identity, print, social media creatives, and marketing assets. I use Adobe Creative Suite alongside Figma, so the visual quality holds whether it\'s a screen or a printed piece.',
+    text: 'Strong graphic design roots I handle logos, brand identity, print, social media creatives, and marketing assets. I use Adobe Creative Suite alongside Figma, so the visual quality holds whether it\'s a screen or a printed piece.',
     tags: ['Adobe Suite', 'Brand Identity', 'Logo Design', 'Social Media'],
   },
   {
     title: 'Mobile App Design',
-    text: 'Designed mobile-first experiences for iOS and Android — from fintech wallets and VPN apps to telecom self-service and pharma field tools. I design for how people actually hold and use their phones, not just how things look in Figma.',
+    text: 'Designed mobile-first experiences for iOS and Android from fintech wallets and VPN apps to telecom self-service and pharma field tools. I design for how people actually hold and use their phones, not just how things look in Figma.',
     tags: ['iOS & Android', 'Mobile UX', 'Onboarding Flows', 'Gestures & Micro-interactions'],
   },
   {
     title: 'WordPress Development',
-    text: "I don't just design in Figma — I also build in WordPress. This means I understand dev constraints, know what's achievable, and can deliver end-to-end for clients who need design and development in one place.",
+    text: "I don't just design in Figma I also build in WordPress. This means I understand dev constraints, know what's achievable, and can deliver end-to-end for clients who need design and development in one place.",
     tags: ['WordPress', 'Elementor / Divi', 'Custom CSS', 'WooCommerce'],
   },
 ]
@@ -56,7 +58,7 @@ const AI_TOOLS = [
 
 const EXPERIENCE = [
   {
-    date: 'Dec 2025 — Present', badge: 'Current',
+    date: 'Dec 2025 Present', badge: 'Current',
     role: 'Lead UX/UI Designer (Product Designer)',
     company: 'Techesthete · Lahore',
     bullets: [
@@ -72,7 +74,7 @@ const EXPERIENCE = [
     tags: ['AI SaaS', 'Figma', 'Design Systems', 'Analytics Dashboards', 'TikTok Ads', 'Amazon'],
   },
   {
-    date: 'Feb 2024 — Present', badge: 'Current',
+    date: 'Feb 2024 Present', badge: 'Current',
     role: 'Lead UX/UI Designer · Product Designer · Graphic Designer',
     company: 'Freelance · United Kingdom (Remote)',
     bullets: [
@@ -85,7 +87,7 @@ const EXPERIENCE = [
     tags: ['Figma', 'WordPress', 'SaaS Dashboards', 'Mobile Apps', 'ERP'],
   },
   {
-    date: 'Jun 2023 — Dec 2025',
+    date: 'Jun 2023 Dec 2025',
     role: 'Lead UX/UI Designer · ERP & SaaS Product Design',
     company: 'Softbeats (Pvt.) Ltd · Lahore',
     bullets: [
@@ -98,7 +100,7 @@ const EXPERIENCE = [
     tags: ['ERP Systems', 'SaaS UI', 'Mobile Apps', 'Figma', 'Product Design'],
   },
   {
-    date: 'Jan 2022 — Dec 2023',
+    date: 'Jan 2022 Dec 2023',
     role: 'UX/UI Designer → Lead UX/UI Designer · Graphic Designer',
     company: 'Logo Web Pros · Sindh, Pakistan',
     bullets: [
@@ -111,7 +113,7 @@ const EXPERIENCE = [
     tags: ['Web Design', 'Mobile UI', 'WordPress', 'SaaS', 'Crypto'],
   },
   {
-    date: 'Aug 2021 — Jan 2022',
+    date: 'Aug 2021 Jan 2022',
     role: 'UX/UI Designer · Graphic Designer',
     company: 'Skylinx Technologies · Lahore',
     bullets: [
@@ -123,7 +125,7 @@ const EXPERIENCE = [
     tags: ['Adobe XD', 'Figma', 'Wireframing', 'Prototyping'],
   },
   {
-    date: 'Mar 2019 — Aug 2021',
+    date: 'Mar 2019 Aug 2021',
     role: 'Graphic Designer & UI Designer',
     company: 'Dizainers · Lahore',
     bullets: [
@@ -145,7 +147,7 @@ export default function AboutPage() {
           <span className="label">About Me</span>
           <h1 className="page-hero-title">I design products<br />people <em>enjoy using.</em></h1>
           <p className="page-hero-desc">
-            Lead Product Designer with 7 years of experience turning complex business problems into clean, intuitive products across SaaS, fintech, telecom, ERP, and AI.
+            Lead Product Designer with 7+ years of experience turning complex business problems into clean, intuitive products across SaaS, fintech, telecom, ERP, and AI.
           </p>
         </div>
       </div>
@@ -163,7 +165,7 @@ export default function AboutPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/assets/images/hammood.png"
-                    alt="Hammood Ur Rehman — Lead Product Designer"
+                    alt="Hammood Ur Rehman Lead Product Designer"
                   />
                 </div>
                 <div className="about-stats">
@@ -176,20 +178,20 @@ export default function AboutPage() {
               {/* Bio */}
               <div className="about-text reveal">
                 <p className="about-para">
-                  I&apos;m Hammood — a <strong>Lead Product Designer</strong> with 7 years of experience turning complex business problems into products people actually want to use. I&apos;ve worked across SaaS, fintech, telecom, e-commerce, and enterprise — with startups, agencies, and global clients.
+                  I&apos;m Hammood a <strong>Lead Product Designer</strong> with 7+ years of experience turning complex business problems into products people actually want to use. I&apos;ve worked across SaaS, fintech, telecom, e-commerce, and enterprise with startups, agencies, and global clients.
                 </p>
                 <p className="about-para">
-                  My strength is in <span className="about-hl">making complexity feel simple.</span> Whether it&apos;s a dense ERP system, a multi-tenant SaaS dashboard, or a mobile app — I focus on the user first and the pixels second. Good design isn&apos;t about aesthetics alone; it&apos;s about products that work the way people expect them to.
+                  My strength is in <span className="about-hl">making complexity feel simple.</span> Whether it&apos;s a dense ERP system, a multi-tenant SaaS dashboard, or a mobile app I focus on the user first and the pixels second. Good design isn&apos;t about aesthetics alone; it&apos;s about products that work the way people expect them to.
                 </p>
                 <p className="about-para">
-                  I currently work at <strong>Techesthete</strong> as Lead Product Designer, building <span className="about-hl">AI-powered SaaS products</span> for TikTok and Amazon advertising platforms. I also take on freelance work for global clients — designing everything from fintech apps to enterprise platforms to brand identities.
+                  I currently work at <strong>Techesthete</strong> as Lead Product Designer, building <span className="about-hl">AI-powered SaaS products</span> for TikTok and Amazon advertising platforms. I also take on freelance work for global clients designing everything from fintech apps to enterprise platforms to brand identities.
                 </p>
                 <p className="about-para">
-                  I apply <strong>AI-assisted design workflows</strong> daily — using tools like Claude, Figma AI, ChatGPT, and Figma Make to validate ideas faster, reduce iteration cycles, and ship better products sooner. AI doesn&apos;t replace the thinking — it accelerates it.
+                  I apply <strong>AI-assisted design workflows</strong> daily using tools like Claude, Figma AI, ChatGPT, and Figma Make to validate ideas faster, reduce iteration cycles, and ship better products sooner. AI doesn&apos;t replace the thinking it accelerates it.
                 </p>
                 <p className="about-para" style={{ marginTop: '0.5rem' }}>
                   <strong>Education:</strong> BS Information Technology, University of Education (PK), 2016–2020.<br />
-                  <strong>Location:</strong> Lahore, Pakistan — working with global clients.<br />
+                  <strong>Location:</strong> Lahore, Pakistan working with global clients.<br />
                   <strong>Behance:</strong>{' '}
                   <a href="https://www.behance.net/hammood" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>behance.net/hammood</a>
                 </p>
@@ -222,7 +224,7 @@ export default function AboutPage() {
                     AI Tools I Actually Use
                   </h3>
                   <p className="ai-panel-desc">
-                    Not buzzwords — these are in my daily workflow. I use AI to move faster, validate concepts earlier, and spend more time on decisions that actually matter.
+                    Not buzzwords these are in my daily workflow. I use AI to move faster, validate concepts earlier, and spend more time on decisions that actually matter.
                   </p>
                   <div className="ai-chips">
                     {AI_TOOLS.map(({ name, role }) => (
@@ -243,7 +245,7 @@ export default function AboutPage() {
           <div className="container">
             <div className="section-head reveal">
               <span className="label">Work History</span>
-              <h2 className="section-title">7 years of building <em>real products.</em></h2>
+              <h2 className="section-title">7+ years of building <em>real products.</em></h2>
             </div>
 
             <div className="exp-list">

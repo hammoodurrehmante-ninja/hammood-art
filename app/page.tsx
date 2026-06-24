@@ -4,9 +4,11 @@ import Ticker from '@/components/Ticker'
 import ProjectsCarousel from '@/components/ProjectsCarousel'
 
 export const metadata: Metadata = {
-  title: 'Hammood Ur Rehman — Lead Product Designer | UX/UI, Figma & AI SaaS',
+  title: 'Lead Product Designer | UX/UI, Figma, SaaS & AI — Hammood Ur Rehman',
   description:
-    'Lead Product Designer with 7 years crafting SaaS dashboards, ERP platforms, mobile apps & AI-powered products. Expert in Figma, design systems & end-to-end UX.',
+    'Lead Product Designer with 7+ years crafting SaaS dashboards, ERP platforms, mobile apps & AI-powered products. Expert in Figma, design systems & full-stack dev using AI. Based in Lahore, Pakistan.',
+  alternates: { canonical: 'https://hammood.com' },
+  openGraph: { url: 'https://hammood.com' },
 }
 
 const TICKER_ITEMS = [
@@ -52,14 +54,14 @@ export default function Home() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/images/hammood.png"
-            alt="Hammood Ur Rehman — Lead Product Designer"
+            alt="Hammood Ur Rehman Lead Product Designer"
             className="hero-photo"
           />
         </div>
 
         <div className="hero-right">
           <p className="hero-desc">
-            7 years designing SaaS platforms, ERP dashboards, mobile apps &amp; AI-powered products that people actually enjoy using.
+            7+ years designing SaaS platforms, ERP dashboards, mobile apps &amp; AI-powered products that people actually enjoy using.
           </p>
           <Link href="/work" className="hero-cta">
             <span className="hero-cta-icon">→</span>
@@ -74,7 +76,8 @@ export default function Home() {
         </div>
 
         <div className="hero-name-row" aria-hidden="true">
-          <span className="hero-name-text">HAMMOOD</span>
+          <span className="hero-name-text hero-name-l1">HAMM</span>
+          <span className="hero-name-text hero-name-l2">OOD</span>
         </div>
 
         <div className="hero-scroll" aria-hidden="true">

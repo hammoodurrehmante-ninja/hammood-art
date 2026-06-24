@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Work — Hammood Ur Rehman | Product Design Portfolio',
+  title: 'Work — Product Design Portfolio | 9 Case Studies',
   description:
-    'Selected projects by Hammood Ur Rehman — SaaS dashboards, ERP platforms, mobile apps, fintech, and AI-powered product design.',
+    'Selected case studies by Hammood Ur Rehman — SaaS dashboards, ERP platforms, mobile apps, fintech, AI-powered products & full-stack dev using AI.',
+  alternates: { canonical: 'https://hammood.com/work' },
+  openGraph: { url: 'https://hammood.com/work' },
 }
 
 const BAR_HEIGHTS = [35, 55, 40, 72, 50, 82, 60, 90]
@@ -17,7 +19,7 @@ export default function WorkPage() {
           <span className="label">Selected Work</span>
           <h1 className="page-hero-title">Projects that<br />made a <em>difference.</em></h1>
           <p className="page-hero-desc">
-            7 years of solving real design problems — from AI-powered ad platforms to enterprise ERP systems, mobile wallets, and telecom apps.
+            7+ years of solving real design problems from AI-powered ad platforms to enterprise ERP systems, mobile wallets, and telecom apps.
           </p>
         </div>
       </div>
@@ -28,7 +30,7 @@ export default function WorkPage() {
         <div className="project-featured reveal">
           <div className="pf-img-col">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/vedapure-thumb.png" alt="VedaPure E-Commerce Platform — Hammood Ur Rehman" />
+            <img src="/assets/vedapure-thumb.png" alt="VedaPure E-Commerce Platform Hammood Ur Rehman" />
           </div>
           <div className="pf-info-col">
             <div>
@@ -39,7 +41,7 @@ export default function WorkPage() {
               </div>
               <h2 className="project-title" style={{ marginTop: '0.85rem' }}>VedaPure Wellness</h2>
               <p className="project-desc" style={{ marginTop: '0.75rem' }}>
-                Designed and built a full e-commerce experience from scratch. A high-fidelity Figma UI brought to life with React, Tailwind CSS, Node.js, and Neon Postgres — every screen crafted to feel premium and convert browsers into buyers.
+                Designed and built a full e-commerce experience from scratch. A high-fidelity Figma UI brought to life with React, Tailwind CSS, Node.js, and Neon Postgres every screen crafted to feel premium and convert browsers into buyers.
               </p>
               <div className="project-tags" style={{ marginTop: '0.85rem' }}>
                 {['Figma', 'React', 'Tailwind CSS', 'Node.js', 'Neon DB'].map(tag => (
@@ -73,7 +75,7 @@ export default function WorkPage() {
                 <span className="project-cat">Product Design</span>
               </div>
               <h2 className="project-title">NextLevel Platform</h2>
-              <p className="project-desc">A digital real estate fintech platform built to simplify the home-buying journey. Multi-role dashboards for buyers, advisors, and agents — clear data layouts that cut through the complexity.</p>
+              <p className="project-desc">A digital real estate fintech platform built to simplify the home-buying journey. Multi-role dashboards for buyers, advisors, and agents clear data layouts that cut through the complexity.</p>
               <div className="project-tags">
                 {['Figma', 'Dashboard UX', 'Data Visualization', 'Multi-Role UI'].map(tag => (
                   <span key={tag} className="project-tag">{tag}</span>
@@ -97,7 +99,7 @@ export default function WorkPage() {
                 <span className="project-cat">Amazon Seller Tools</span>
               </div>
               <h2 className="project-title">Appeals Doctor</h2>
-              <p className="project-desc">Amazon sellers lose thousands every day to account suspensions. Designed the full dashboard — structured case workflows, document tracking, and collaboration tools so sellers recover faster.</p>
+              <p className="project-desc">Amazon sellers lose thousands every day to account suspensions. Designed the full dashboard structured case workflows, document tracking, and collaboration tools so sellers recover faster.</p>
               <div className="project-tags">
                 {['Figma', 'Dashboard UX', 'Case Management', 'SaaS Workflows'].map(tag => (
                   <span key={tag} className="project-tag">{tag}</span>
@@ -128,7 +130,7 @@ export default function WorkPage() {
                 <span className="project-cat">SaaS Dashboard</span>
               </div>
               <h2 className="project-title">Pixis · Stellar</h2>
-              <p className="project-desc">Designed the Stellar dashboard for Pixis — an AI-driven ad automation platform. Clean, focused interfaces for complex campaign pipelines built to make AI-powered advertising feel effortless.</p>
+              <p className="project-desc">Designed the Stellar dashboard for Pixis an AI-driven ad automation platform. Clean, focused interfaces for complex campaign pipelines built to make AI-powered advertising feel effortless.</p>
               <div className="project-tags">
                 {['Figma', 'AI SaaS', 'Product Design', 'Design Systems'].map(tag => (
                   <span key={tag} className="project-tag">{tag}</span>
@@ -157,7 +159,7 @@ export default function WorkPage() {
                 <span className="project-cat">Security &amp; Compliance</span>
               </div>
               <h2 className="project-title">Protego Suite</h2>
-              <p className="project-desc">Enterprise compliance is complex and messy — Protego needed it to feel manageable. Designed the full product: dense data tables, multi-step audit workflows, and role-based access controls.</p>
+              <p className="project-desc">Enterprise compliance is complex and messy Protego needed it to feel manageable. Designed the full product: dense data tables, multi-step audit workflows, and role-based access controls.</p>
               <div className="project-tags">
                 {['Figma', 'UX Research', 'Enterprise UI', 'Role-Based Access'].map(tag => (
                   <span key={tag} className="project-tag">{tag}</span>
@@ -217,7 +219,7 @@ export default function WorkPage() {
                 <span className="project-cat">Digital Wallet</span>
               </div>
               <h2 className="project-title">Payvato App &amp; Dashboard</h2>
-              <p className="project-desc">A complete fintech product — mobile wallet app plus admin dashboard. Dark, clean UI with fast transaction flows and micro-animations designed to make P2P payments feel instant and trustworthy.</p>
+              <p className="project-desc">A complete fintech product mobile wallet app plus admin dashboard. Dark, clean UI with fast transaction flows and micro-animations designed to make P2P payments feel instant and trustworthy.</p>
               <div className="project-tags">
                 {['Figma', 'Mobile UI', 'P2P Payments', 'Dashboard'].map(tag => (
                   <span key={tag} className="project-tag">{tag}</span>

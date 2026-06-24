@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact — Hammood Ur Rehman | Lead Product Designer',
+  title: 'Hire Me — Let\'s Build Something Great',
   description:
-    'Have a project in mind? Get in touch with Hammood Ur Rehman — Lead Product Designer specializing in SaaS, ERP, mobile apps, and AI-powered product design.',
+    'Have a project in mind? Get in touch with Hammood Ur Rehman — Lead Product Designer specializing in SaaS, ERP, mobile apps, AI-powered products & full-stack dev using AI.',
+  alternates: { canonical: 'https://hammood.com/contact' },
+  openGraph: { url: 'https://hammood.com/contact' },
 }
 
 export default function ContactPage() {
@@ -15,7 +17,7 @@ export default function ContactPage() {
           <span className="label">Get in Touch</span>
           <h1 className="page-hero-title">Have a project <em>in mind?</em></h1>
           <p className="page-hero-desc">
-            Whether you need a product designed from scratch, a dashboard that actually makes sense, or just want to talk through an idea — I&apos;m here. Let&apos;s build it right.
+            Whether you need a product designed from scratch, a dashboard that actually makes sense, or just want to talk through an idea I&apos;m here. Let&apos;s build it right.
           </p>
         </div>
       </div>
@@ -27,8 +29,8 @@ export default function ContactPage() {
             {/* Left: Info */}
             <div className="contact-info-col reveal">
               <span className="label">Direct email</span>
-              <a href="mailto:hammoodurrehman.te@gmail.com?subject=Project%20Inquiry" className="contact-email-link">
-                hammoodurrehman.te@gmail.com →
+              <a href="mailto:hire@hammood.com?subject=Project%20Inquiry" className="contact-email-link">
+                hire@hammood.com →
               </a>
 
               <span className="label" style={{ marginBottom: '1rem' }}>Connect</span>

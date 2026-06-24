@@ -13,10 +13,21 @@ const links = [
 export default function Nav() {
   const pathname  = usePathname()
   const [scrolled, setScrolled]   = useState(false)
+  const [hidden,   setHidden]     = useState(false)
   const [menuOpen, setMenuOpen]   = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 30)
+    let lastY = window.scrollY
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 30)
+      if (y > lastY && y > 80) {
+        setHidden(true)
+      } else {
+        setHidden(false)
+      }
+      lastY = y
+    }
     window.addEventListener('scroll', onScroll, { passive: true })
     onScroll()
     return () => window.removeEventListener('scroll', onScroll)
@@ -36,7 +47,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="nav">
+      <nav className={`nav${scrolled ? ' scrolled' : ''}${hidden ? ' nav--hidden' : ''}`} id="nav">
         <Link href="/" className="nav-logo">
           HUR<span className="dot">.</span>
         </Link>
