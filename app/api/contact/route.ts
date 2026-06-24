@@ -70,7 +70,7 @@ export async function POST(req: NextRequest) {
         to:      process.env.EMAIL_USER,
         subject: `[Portfolio] ${clean.subject}`,
         html: `
-          <h2 style="color:#BC79E1">New message from your portfolio</h2>
+          <h2 style="color:#FF0022">New message from your portfolio</h2>
           <p><strong>Name:</strong> ${esc(clean.name)}</p>
           <p><strong>Email:</strong> <a href="mailto:${esc(clean.email)}">${esc(clean.email)}</a></p>
           <p><strong>Subject:</strong> ${esc(clean.subject)}</p>

@@ -20,6 +20,44 @@ const STATS = [
   { num: 'AI',  lbl: 'Daily Workflow' },
 ]
 
+const CASE_STUDIES = [
+  {
+    title: 'Payvato',
+    cat: 'Fintech · Mobile App',
+    img: null,
+    bg: 'linear-gradient(145deg, #1a0010 0%, #600010 40%, #FF0022 100%)',
+    icon: '₿',
+  },
+  {
+    title: 'VedaPure',
+    cat: 'E-Commerce · Web',
+    img: '/assets/vedapure-thumb.png',
+    bg: null,
+    icon: null,
+  },
+  {
+    title: 'Protego',
+    cat: 'Security · SaaS',
+    img: null,
+    bg: 'linear-gradient(145deg, #0D0A14 0%, #3a0010 50%, #800018 100%)',
+    icon: '🔒',
+  },
+  {
+    title: 'NextLevel',
+    cat: 'Fintech · Dashboard',
+    img: '/assets/nextlevel-thumb.png',
+    bg: null,
+    icon: null,
+  },
+  {
+    title: 'Appeals Doctor',
+    cat: 'SaaS · Amazon',
+    img: '/assets/appealsdr-thumb.png',
+    bg: null,
+    icon: null,
+  },
+]
+
 export default function Home() {
   return (
     <>
@@ -76,10 +114,10 @@ export default function Home() {
       {/* ── Stats ────────────────────────── */}
       <section className="section" style={{ paddingTop: '4rem', paddingBottom: '4rem', borderBottom: '1px solid var(--b1)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'var(--b1)', border: '1px solid var(--b1)', borderRadius: 'var(--rad-lg)', overflow: 'hidden' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: 'var(--rad-lg)', overflow: 'hidden', boxShadow: '0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)' }}>
             {STATS.map(({ num, lbl }) => (
-              <div key={lbl} style={{ background: 'var(--bg-2)', padding: '2rem 1.5rem', textAlign: 'center' }}>
-                <div style={{ fontFamily: 'var(--f-head)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--accent)', lineHeight: 1 }}>{num}</div>
+              <div key={lbl} style={{ background: 'rgba(255,255,255,0.035)', backdropFilter: 'blur(20px)', padding: '2rem 1.5rem', textAlign: 'center' }}>
+                <div style={{ fontFamily: 'var(--f-head)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--accent)', lineHeight: 1, textShadow: '0 0 24px rgba(255,0,34,0.5)' }}>{num}</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--t3)', marginTop: '0.4rem', fontWeight: 500 }}>{lbl}</div>
               </div>
             ))}
@@ -87,89 +125,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Featured Work ─────────────────── */}
-      <section className="section">
+      {/* ── Case Studies Fan ──────────────────── */}
+      <section className="cs-fan-section">
         <div className="container">
           <div className="section-head reveal">
             <span className="label">Selected Work</span>
             <h2 className="section-title">Projects that made <em>a difference.</em></h2>
           </div>
+        </div>
 
-          <div className="project-featured reveal rd1">
-            <div className="pf-img-col">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/assets/vedapure-thumb.png" alt="VedaPure E-Commerce Platform by Hammood Ur Rehman" />
-            </div>
-            <div className="pf-info-col">
-              <div>
-                <div className="project-cats">
-                  <span className="project-cat">E-Commerce</span>
-                  <span className="project-cat">UX/UI Design</span>
-                  <span className="project-cat">Web Development</span>
-                </div>
-                <h3 className="project-title" style={{ marginTop: '0.85rem' }}>VedaPure Wellness</h3>
-                <p className="project-desc" style={{ marginTop: '0.75rem' }}>
-                  Designed and built a full e-commerce experience from the ground up. A high-fidelity Figma UI brought to life with React, Tailwind CSS, Node.js, and Neon Postgres — every screen crafted to feel premium and convert.
-                </p>
-                <div className="project-tags" style={{ marginTop: '0.75rem' }}>
-                  {['Figma', 'React', 'Tailwind CSS', 'Node.js', 'Neon DB'].map(tag => (
-                    <span key={tag} className="project-tag">{tag}</span>
-                  ))}
-                </div>
+        <div className="cs-fan-wrap">
+          {CASE_STUDIES.map(({ title, cat, img, bg, icon }) => (
+            <div
+              key={title}
+              className="cs-card"
+              style={bg ? { background: bg } : undefined}
+            >
+              {img ? (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img src={img} alt={title} className="cs-card-img" />
+              ) : (
+                <div className="cs-card-solid">{icon}</div>
+              )}
+              <div className="cs-card-overlay">
+                <div className="cs-card-cat">{cat}</div>
+                <div className="cs-card-title">{title}</div>
               </div>
-              <a href="https://www.vedhapure.com" target="_blank" rel="noopener noreferrer" className="project-link">
-                View Live Project <span className="lk-arrow">→</span>
-              </a>
             </div>
-          </div>
+          ))}
+        </div>
 
-          <div className="projects-grid">
-            <div className="project-card reveal rd1">
-              <div className="project-thumb">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/assets/nextlevel-thumb.png" alt="NextLevel Fintech Platform" />
-              </div>
-              <div className="project-body">
-                <div className="project-cats">
-                  <span className="project-cat">Fintech</span>
-                  <span className="project-cat">Product Design</span>
-                </div>
-                <h3 className="project-title">NextLevel Platform</h3>
-                <p className="project-desc">Digital real estate fintech — multi-role dashboards for buyers, advisors, and agents.</p>
-                <div className="project-tags">
-                  {['Figma', 'Dashboard UX', 'Multi-Role UI'].map(tag => (
-                    <span key={tag} className="project-tag">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <div className="project-card reveal rd2">
-              <div className="project-thumb">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/assets/appealsdr-thumb.png" alt="Appeals Doctor SaaS" />
-              </div>
-              <div className="project-body">
-                <div className="project-cats">
-                  <span className="project-cat">SaaS Platform</span>
-                  <span className="project-cat">Amazon Seller Tools</span>
-                </div>
-                <h3 className="project-title">Appeals Doctor</h3>
-                <p className="project-desc">Amazon suspension recovery platform — structured case workflows and document tracking.</p>
-                <div className="project-tags">
-                  {['Figma', 'Dashboard UX', 'SaaS Workflows'].map(tag => (
-                    <span key={tag} className="project-tag">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link href="/work" className="hero-cta" style={{ display: 'inline-flex' }}>
-              <span className="hero-cta-icon">→</span>
-              See all projects
-            </Link>
-          </div>
+        <div style={{ textAlign: 'center', paddingBottom: '5rem' }}>
+          <Link href="/work" className="hero-cta" style={{ display: 'inline-flex' }}>
+            <span className="hero-cta-icon">→</span>
+            See all projects
+          </Link>
         </div>
       </section>
     </>
