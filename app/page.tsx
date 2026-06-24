@@ -20,42 +20,16 @@ const STATS = [
   { num: 'AI',  lbl: 'Daily Workflow' },
 ]
 
-const CASE_STUDIES = [
-  {
-    title: 'Payvato',
-    cat: 'Fintech · Mobile App',
-    img: null,
-    bg: 'linear-gradient(145deg, #1a0010 0%, #600010 40%, #FF0022 100%)',
-    icon: '₿',
-  },
-  {
-    title: 'VedaPure',
-    cat: 'E-Commerce · Web',
-    img: '/assets/vedapure-thumb.png',
-    bg: null,
-    icon: null,
-  },
-  {
-    title: 'Protego',
-    cat: 'Security · SaaS',
-    img: null,
-    bg: 'linear-gradient(145deg, #0D0A14 0%, #3a0010 50%, #800018 100%)',
-    icon: '🔒',
-  },
-  {
-    title: 'NextLevel',
-    cat: 'Fintech · Dashboard',
-    img: '/assets/nextlevel-thumb.png',
-    bg: null,
-    icon: null,
-  },
-  {
-    title: 'Appeals Doctor',
-    cat: 'SaaS · Amazon',
-    img: '/assets/appealsdr-thumb.png',
-    bg: null,
-    icon: null,
-  },
+const ALL_PROJECTS = [
+  { title: 'VedaPure',        cat: 'E-Commerce · Web',      date: 'Jan 2025', slug: 'vedapure',       bg: 'linear-gradient(145deg, #051a05 0%, #0d3a10 50%, #1a5c1a 100%)' },
+  { title: 'Payvato',         cat: 'Fintech · Mobile App',  date: 'Mar 2025', slug: 'payvato',        bg: 'linear-gradient(145deg, #1a0010 0%, #600010 40%, #FF0022 100%)' },
+  { title: 'Protego',         cat: 'Security · SaaS',       date: 'Jun 2024', slug: 'protego',        bg: 'linear-gradient(145deg, #0D0A14 0%, #3a0010 50%, #800018 100%)' },
+  { title: 'NextLevel',       cat: 'Fintech · Dashboard',   date: 'Sep 2024', slug: 'nextlevel',      bg: 'linear-gradient(145deg, #08081f 0%, #14144a 50%, #1e1e8a 100%)' },
+  { title: 'Appeals Doctor',  cat: 'SaaS · Amazon',         date: 'Dec 2024', slug: 'appeals-doctor', bg: 'linear-gradient(145deg, #0a0806 0%, #2a1a08 50%, #5a3010 100%)' },
+  { title: 'Pixis Stellar',   cat: 'Ad Tech · SaaS',        date: 'Feb 2025', slug: 'pixis-stellar',  bg: 'linear-gradient(145deg, #050518 0%, #0a0a3a 50%, #12126e 100%)' },
+  { title: 'Etisalat',        cat: 'Telecom · Enterprise',  date: 'Aug 2023', slug: 'etisalat',       bg: 'linear-gradient(145deg, #001810 0%, #003828 50%, #006040 100%)' },
+  { title: 'Gluon ERP',       cat: 'ERP · SaaS',            date: 'Nov 2023', slug: 'gluon-erp',      bg: 'linear-gradient(145deg, #1a0600 0%, #4a1200 50%, #FF2200 100%)' },
+  { title: 'QGolf VPN',       cat: 'VPN · Mobile',          date: 'Apr 2024', slug: 'qgolf-vpn',      bg: 'linear-gradient(145deg, #001818 0%, #003838 50%, #005c5c 100%)' },
 ]
 
 export default function Home() {
@@ -125,37 +99,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Case Studies Fan ──────────────────── */}
-      <section className="cs-fan-section">
+      {/* ── Projects Carousel ──────────────────── */}
+      <section className="proj-scroll-section">
         <div className="container">
-          <div className="section-head reveal">
-            <span className="label">Selected Work</span>
-            <h2 className="section-title">Projects that made <em>a difference.</em></h2>
+          <div className="proj-scroll-header">
+            <div>
+              <span className="label">Selected Work</span>
+              <h2 className="section-title" style={{ marginTop: '0.5rem' }}>Projects that made <em>a difference.</em></h2>
+            </div>
+            <Link href="/work" className="proj-scroll-more">View All +9 →</Link>
           </div>
         </div>
 
-        <div className="cs-fan-wrap">
-          {CASE_STUDIES.map(({ title, cat, img, bg, icon }) => (
-            <div
-              key={title}
-              className="cs-card"
-              style={bg ? { background: bg } : undefined}
-            >
-              {img ? (
-                /* eslint-disable-next-line @next/next/no-img-element */
-                <img src={img} alt={title} className="cs-card-img" />
-              ) : (
-                <div className="cs-card-solid">{icon}</div>
-              )}
-              <div className="cs-card-overlay">
-                <div className="cs-card-cat">{cat}</div>
-                <div className="cs-card-title">{title}</div>
-              </div>
-            </div>
-          ))}
+        <div className="proj-scroll-outer">
+          <div className="proj-scroll-track">
+            {[...ALL_PROJECTS, ...ALL_PROJECTS].map(({ title, cat, date, slug, bg }, i) => (
+              <Link
+                key={i}
+                href={`/work/${slug}`}
+                className="proj-sc-card"
+                style={{ background: bg }}
+              >
+                <div className="proj-sc-overlay">
+                  <span className="proj-sc-date">{date}</span>
+                  <div className="proj-sc-bottom">
+                    <div className="proj-sc-cat">{cat}</div>
+                    <div className="proj-sc-title">{title}</div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <div style={{ textAlign: 'center', paddingBottom: '5rem' }}>
+        <div style={{ textAlign: 'center', padding: '3.5rem 0 5rem' }}>
           <Link href="/work" className="hero-cta" style={{ display: 'inline-flex' }}>
             <span className="hero-cta-icon">→</span>
             See all projects
