@@ -67,6 +67,11 @@ app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Portfolio running at http://localhost:${PORT}`);
-});
+// Export for Vercel serverless; listen only when run directly
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Portfolio running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
