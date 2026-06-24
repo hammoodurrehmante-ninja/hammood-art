@@ -1,0 +1,101 @@
+--- Page 1 ---
+Web App | 2026
+Resolve violations and 
+regain confidence 
+in your Amazon business.
+Figma       •  Data Visualization
+Project Overview
+Appeals Doctor is a data-driven platform that simplifies Amazon 
+account recovery by structuring workflows, managing 
+documents, and enabling real-time collaboration within a unified 
+system.
+Project Name
+Appealsdr
+Industry
+SaaS Platform
+Project Goals
+ETL Pipelines
+Transform raw operational data into structured workflows
+Workflow Engine
+Automate appeal processes with action-based logic
+Data Modeling
+Scalable multi-tenant architecture
+Real-Time Insights
+L i v e tracking across ser v ices and actions
+S ervices Management 
+U ni fi ed view o f  all appeal services
+•    Track ser v ice progress and status
+•    I dentif y  pending and action-re q uired tasks
+•    Structured ser v ice lifec y cle management
+Orders Management
+C entrali z ed tracking o f  all c u stomer orders
+•    M onitor order lifec y cle and status
+•    Track pa y ments (P aid ,  P ending ,  P artial )
+•    L inked directl y  with ser v ices and workflows
+A ctions Workflow
+E x ec u tion la y er f or managing appeal tasks
+•    C reate ,  assign ,  and manage actions
+•    Track progress across multiple stages
+•    E nsure structured workflow e x ecution
+Organi z ation
+Manage and str u ct u re acco u nts across organi z ations
+•    C reate and manage multiple organi z ations
+•    Assign and organi z e accounts under each entit y
+•    Simplif y  multi-client and multi-account operations
+Pro b lem &  S ol u tion What is it ?
+Appeals Doctor is a platform that helps Amazon sellers resolve account violations, 
+listing issues, and policy restrictions through structured workflows and e x pert 
+support. It centralizes appeals, documents, services, and communication in one 
+system, making the recovery process faster and easier to manage.
+C hallenges
+Developing Appeals Doctor involved 
+managing comple x  relationships 
+between services, actions, and 
+documents while keeping the system 
+scalable for multiple users and accounts. 
+E nsuring real-time performance with 
+growing data volumes and translating 
+intricate appeal workflows into a simple, 
+intuitive user e x perience were key 
+challenges.
+S ol u tion
+T o address these challenges, Developed a 
+modular and scalable data architecture with 
+well-structured relationships between 
+services, actions, and documents. O ptimized 
+q ueries, inde x ing, and aggregated APIs were 
+implemented to ensure fast real-time 
+performance. I also introduced a workflow-
+driven system with fle x ible logic ( actions and 
+decision trees )  to simplify comple x  processes, 
+while maintaining clean, maintainable code to 
+adapt to evolving business re q uirements.
+Dev .  Process01
+Research &  Pro b lem Discover y
+Anal y z ed Ama z on seller workflows ,  focusing on account 
+suspensions ,  v iolations ,  and appeal handling .  I denti fi ed 
+ke y  gaps in data flow ,  document management ,  and 
+process fragmentation .  D e fi ned the need for a 
+centrali z ed ,  workflow-dri v en s y stem with a scalable data 
+architecture .
+0 2
+U ser J o u rne y  Planning &  Plat f orm S tr u ct u re
+M apped the complete s y stem flow from account 
+connection to appeal resolution .  D e v elop core data 
+models for ser v ices ,  actions ,  documents ,  and users .  
+Structured A PI s and workflows to ensure seamless data 
+mo v ement ,  clear state transitions ,  and e ffi cient task 
+e x ecution .
+0 3
+Wire f raming &  Dash b oard Interaction Design
+D e v eloped low- fi delit y  wireframes aligned with 
+backend architecture and data structures .  D e fi ned 
+component interactions for dashboards ,  workflows ,  
+and document handling .  F ocused on performance ,  
+usabilit y,  and ensuring the U I  reflects real-time s y stem 
+states accuratel y .
+ A rchitect u re F low
+Results
+I build systems that turn
+Raw Data Structured Intelligence Business Impact
+Let’s Build Your System
