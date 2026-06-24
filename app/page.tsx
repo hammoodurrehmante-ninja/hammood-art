@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Ticker from '@/components/Ticker'
+import ProjectsCarousel from '@/components/ProjectsCarousel'
 
 export const metadata: Metadata = {
   title: 'Hammood Ur Rehman — Lead Product Designer | UX/UI, Figma & AI SaaS',
@@ -111,26 +112,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="proj-scroll-outer">
-          <div className="proj-scroll-track">
-            {[...ALL_PROJECTS, ...ALL_PROJECTS].map(({ title, cat, date, slug, bg }, i) => (
-              <Link
-                key={i}
-                href={`/work/${slug}`}
-                className="proj-sc-card"
-                style={{ background: bg }}
-              >
-                <div className="proj-sc-overlay">
-                  <span className="proj-sc-date">{date}</span>
-                  <div className="proj-sc-bottom">
-                    <div className="proj-sc-cat">{cat}</div>
-                    <div className="proj-sc-title">{title}</div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+        <ProjectsCarousel projects={ALL_PROJECTS} />
 
         <div style={{ textAlign: 'center', padding: '3.5rem 0 5rem' }}>
           <Link href="/work" className="hero-cta" style={{ display: 'inline-flex' }}>
