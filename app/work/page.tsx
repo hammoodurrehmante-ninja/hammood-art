@@ -50,9 +50,6 @@ export default function WorkPage() {
               </div>
             </div>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
-              <Link href="/work/vedapure" className="project-link">
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
               <a href="https://www.vedhapure.com" target="_blank" rel="noopener noreferrer" className="project-link" style={{ opacity: 0.6 }}>
                 Live Site ↗
               </a>
@@ -81,9 +78,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/nextlevel" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 
@@ -105,9 +99,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/appeals-doctor" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 
@@ -136,9 +127,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/pixis-stellar" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 
@@ -165,9 +153,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/protego" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 
@@ -195,9 +180,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/etisalat" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 
@@ -225,9 +207,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/payvato" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 
@@ -257,9 +236,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/gluon-erp" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 
@@ -286,9 +262,6 @@ export default function WorkPage() {
                   <span key={tag} className="project-tag">{tag}</span>
                 ))}
               </div>
-              <Link href="/work/qgolf-vpn" className="project-link" style={{ marginTop: '1rem' }}>
-                View Case Study <span className="lk-arrow">→</span>
-              </Link>
             </div>
           </div>
 

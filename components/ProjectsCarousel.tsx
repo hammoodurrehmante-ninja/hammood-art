@@ -1,7 +1,6 @@
 'use client'
 
 import { useRef, useEffect } from 'react'
-import Link from 'next/link'
 
 interface Project {
   title: string
@@ -78,22 +77,19 @@ export default function ProjectsCarousel({ projects }: { projects: Project[] }) 
       onClickCapture={onClickCapture}
     >
       <div className="proj-scroll-track">
-        {doubled.map(({ title, cat, date, slug, bg }, i) => (
-          <Link
+        {doubled.map(({ title, cat, bg }, i) => (
+          <div
             key={i}
-            href={`/work/${slug}`}
             className="proj-sc-card"
-            style={{ background: bg }}
-            draggable={false}
+            style={{ backgroundImage: bg, backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
             <div className="proj-sc-overlay">
-              <span className="proj-sc-date">{date}</span>
               <div className="proj-sc-bottom">
                 <div className="proj-sc-cat">{cat}</div>
                 <div className="proj-sc-title">{title}</div>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </div>

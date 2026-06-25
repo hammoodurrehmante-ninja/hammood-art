@@ -1868,22 +1868,7 @@ em  { font-style: normal; color: var(--accent); }
 .proj-scroll-outer.is-dragging { cursor: grabbing; }
 
 .proj-scroll-outer::before,
-.proj-scroll-outer::after {
-  content: '';
-  position: absolute;
-  top: 0; bottom: 0;
-  width: 120px;
-  z-index: 3;
-  pointer-events: none;
-}
-.proj-scroll-outer::before {
-  left: 0;
-  background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
-}
-.proj-scroll-outer::after {
-  right: 0;
-  background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
-}
+.proj-scroll-outer::after { display: none; }
 
 .proj-scroll-track {
   display: flex;
@@ -1910,6 +1895,8 @@ em  { font-style: normal; color: var(--accent); }
   display: block;
   margin-right: -28px;
   z-index: 1;
+  background-size: cover;
+  background-position: center;
 }
 .proj-sc-card:nth-child(odd)  { margin-top: 0;    }
 .proj-sc-card:nth-child(even) { margin-top: 52px; }
@@ -1933,7 +1920,7 @@ em  { font-style: normal; color: var(--accent); }
   );
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 1.25rem 1.4rem;
 }
 
@@ -1972,8 +1959,6 @@ em  { font-style: normal; color: var(--accent); }
     margin-right: -18px;
   }
   .proj-sc-card:nth-child(even) { margin-top: 36px; }
-  .proj-scroll-outer::before,
-  .proj-scroll-outer::after { width: 50px; }
 }
 
 /* ── Floating Widgets ─────────────────────────────── */
