@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
       await resend.emails.send({
         from:    'Portfolio Contact <onboarding@resend.dev>',
         replyTo: clean.email,
-        to:      'hammoodchand@gmail.com',
+        to:      'hammoodurrehman.te@gmail.com',
         subject: `[Portfolio] ${clean.subject}`,
         html: `
           <h2 style="color:#FF0022;font-family:sans-serif">New message from your portfolio</h2>
