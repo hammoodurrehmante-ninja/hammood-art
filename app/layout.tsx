@@ -140,6 +140,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var t;window.addEventListener('scroll',function(){document.body.classList.add('is-scrolling');clearTimeout(t);t=setTimeout(function(){document.body.classList.remove('is-scrolling')},800);},{passive:true});})()` }} />
         <div className="bg-grid" aria-hidden="true" />
         <div className="bg-orb-1" aria-hidden="true" />
         <div className="bg-orb-2" aria-hidden="true" />
