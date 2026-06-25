@@ -7,7 +7,6 @@ function getPool(): Pool {
   if (!pool) {
     pool = new Pool({
       connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false },
       max: 10,
     })
   }
@@ -46,11 +45,9 @@ export async function initDb(): Promise<void> {
       );
     `)
 
-    const [settingsCount, analyticsCount, projectsCount] = await Promise.all([
-      client.query('SELECT COUNT(*) FROM settings'),
-      client.query('SELECT COUNT(*) FROM analytics'),
-      client.query('SELECT COUNT(*) FROM projects'),
-    ])
+    const settingsCount  = await client.query('SELECT COUNT(*) FROM settings')
+    const analyticsCount = await client.query('SELECT COUNT(*) FROM analytics')
+    const projectsCount  = await client.query('SELECT COUNT(*) FROM projects')
 
     if (parseInt(settingsCount.rows[0].count) === 0) {
       await client.query('INSERT INTO settings (id, data) VALUES (1, $1)', [
