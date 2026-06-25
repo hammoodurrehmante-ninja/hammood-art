@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE),
 
   title: {
-    default: 'Hammood Ur Rehman — Lead Product Designer',
+    default: 'Hammood Ur Rehman  Lead Product Designer',
     template: '%s | Hammood Ur Rehman',
   },
   description:
@@ -47,21 +47,21 @@ export const metadata: Metadata = {
     type:      'website',
     locale:    'en_US',
     url:       BASE,
-    siteName:  'Hammood Ur Rehman — Portfolio',
-    title:     'Hammood Ur Rehman — Lead Product Designer',
+    siteName:  'Hammood Ur Rehman  Portfolio',
+    title:     'Hammood Ur Rehman  Lead Product Designer',
     description:
       'Lead Product Designer with 7+ years crafting SaaS dashboards, ERP platforms, mobile apps & AI-powered products. Based in Lahore, Pakistan.',
     images: [{
       url:    OG_IMAGE,
       width:  1200,
       height: 630,
-      alt:    'Hammood Ur Rehman — Lead Product Designer',
+      alt:    'Hammood Ur Rehman  Lead Product Designer',
     }],
   },
 
   twitter: {
     card:        'summary_large_image',
-    title:       'Hammood Ur Rehman — Lead Product Designer',
+    title:       'Hammood Ur Rehman  Lead Product Designer',
     description: 'Lead Product Designer with 7+ years crafting SaaS dashboards, ERP platforms & AI-powered products.',
     images:      [OG_IMAGE],
     creator:     '@hammoodur',
@@ -105,8 +105,8 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': `${BASE}/#website`,
       url: BASE,
-      name: 'Hammood Ur Rehman — Portfolio',
-      description: 'Lead Product Designer portfolio — SaaS, ERP, AI products, mobile apps.',
+      name: 'Hammood Ur Rehman  Portfolio',
+      description: 'Lead Product Designer portfolio  SaaS, ERP, AI products, mobile apps.',
       publisher: { '@id': `${BASE}/#person` },
       inLanguage: 'en-US',
     },

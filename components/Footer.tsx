@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
 
         <div className="ftr-bottom">
-          <p className="ftr-copy">© 2026 Hammood Ur Rehman — Lead Product Designer</p>
+          <p className="ftr-copy">© 2026 Hammood Ur Rehman  Lead Product Designer</p>
           <div className="ftr-bottom-links">
             <Link href="/work" className="ftr-bottom-link">Work</Link>
             <Link href="/about" className="ftr-bottom-link">About</Link>

@@ -83,7 +83,7 @@ export default function AdminDashboard() {
         <div className="ad-card">
           <div className="ad-card-head">
             <div>
-              <div className="ad-card-title">Page Views — Last 7 Days</div>
+              <div className="ad-card-title">Page Views  Last 7 Days</div>
               <div className="ad-card-sub">Daily traffic breakdown</div>
             </div>
           </div>

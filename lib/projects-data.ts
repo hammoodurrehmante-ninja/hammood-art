@@ -209,7 +209,7 @@ export const PROJECTS: Project[] = [
   {
     slug: 'mau-brands',
     title: 'Mau Brands',
-    tagline: 'Amazon seller analytics platform — revenue intelligence and inventory risk in one dashboard.',
+    tagline: 'Amazon seller analytics platform  revenue intelligence and inventory risk in one dashboard.',
     categories: ['Amazon Analytics', 'SaaS Dashboard'],
     year: '2025',
     role: 'Lead Product Designer',
@@ -221,7 +221,7 @@ export const PROJECTS: Project[] = [
     solution: 'I designed around the key seller questions: How is revenue trending? Where is inventory risk? Is my Buy Box position healthy? Each dashboard module answers one of these questions clearly. Dense data tables became scannable with colour-coded status and clear WoW change indicators.',
     approach: [
       { step: 'Metric Mapping', desc: 'Identified the 20% of metrics that drive 80% of seller decisions: revenue, TACoS, Buy Box %, inventory risk.' },
-      { step: 'Dashboard Architecture', desc: 'Designed the overview as a command centre — key numbers up top, trends and risk details below.' },
+      { step: 'Dashboard Architecture', desc: 'Designed the overview as a command centre  key numbers up top, trends and risk details below.' },
       { step: 'Data Visualisation', desc: 'Designed sales trend charts, TACoS vs ACoS comparisons, and supply distribution breakdowns.' },
       { step: 'Module Design', desc: 'Designed individual modules for orders, inventory, advertising, and Buy Box risk monitoring.' },
     ],
@@ -303,7 +303,7 @@ export const PROJECTS: Project[] = [
     duration: '3 months',
     industry: 'GovTech / Freelance Marketplace',
     tools: ['Figma', 'Web Design', 'Marketplace UX', 'Landing Page'],
-    overview: 'FedPosts is a freelance marketplace focused on government contracts, connecting professionals with federal procurement opportunities. I designed the full platform from landing page to user onboarding — making the often intimidating world of government contracting feel accessible and trustworthy.\n\nThe product needed to serve both freelancers seeking federal work and agencies posting opportunities.',
+    overview: 'FedPosts is a freelance marketplace focused on government contracts, connecting professionals with federal procurement opportunities. I designed the full platform from landing page to user onboarding  making the often intimidating world of government contracting feel accessible and trustworthy.\n\nThe product needed to serve both freelancers seeking federal work and agencies posting opportunities.',
     challenge: 'Government contracting platforms are notoriously opaque and bureaucratic. The challenge was designing a marketplace that felt modern and approachable to freelancers while meeting the compliance and verification expectations of government clients.',
     solution: 'I designed a clean, confidence-inspiring landing page with clear value propositions, followed by a structured onboarding flow that handled professional verification without overwhelming new users. Trust signals, social proof, and clear CTAs were central to the design strategy.',
     approach: [
@@ -332,7 +332,7 @@ export const PROJECTS: Project[] = [
     duration: '2 months',
     industry: 'Transport / Mobility',
     tools: ['Figma', 'Mobile UX', 'Web Design', 'Branding'],
-    overview: 'SKCab is a ride-sharing platform built around a unique model — passengers and drivers negotiate and agree on a fair price before the ride starts. I designed the marketing website and mobile app experience from the ground up.\n\nThe core design challenge was making price negotiation feel natural and fast rather than awkward or time-consuming.',
+    overview: 'SKCab is a ride-sharing platform built around a unique model  passengers and drivers negotiate and agree on a fair price before the ride starts. I designed the marketing website and mobile app experience from the ground up.\n\nThe core design challenge was making price negotiation feel natural and fast rather than awkward or time-consuming.',
     challenge: 'Ride-sharing is a competitive market dominated by fixed-price giants. SKCab\'s price-negotiation model was the key differentiator but also the biggest UX risk. Making that flow intuitive was critical to the product succeeding.',
     solution: 'I designed a streamlined booking flow where price agreement happens in seconds: request a ride, see driver offers, accept or counter. The UI keeps the negotiation lightweight and conversational, not transactional.',
     approach: [
@@ -354,7 +354,7 @@ export const PROJECTS: Project[] = [
   {
     slug: 'welx',
     title: 'WELX Cloud',
-    tagline: 'Turn any USB into a personal cloud instantly — simple setup, music streaming, no limits.',
+    tagline: 'Turn any USB into a personal cloud instantly  simple setup, music streaming, no limits.',
     categories: ['Cloud Storage', 'Web App'],
     year: '2025',
     role: 'Lead Product Designer',
@@ -362,7 +362,7 @@ export const PROJECTS: Project[] = [
     industry: 'Consumer Tech / Cloud Storage',
     tools: ['Figma', 'Web Design', 'Landing Page', 'Product UX'],
     overview: 'WELX is a consumer cloud storage product with a unique angle: plug in a USB drive and instantly turn it into a personal cloud for music. No complex setup, no subscription tiers, no storage limits. I designed the product website and core UX flows.\n\nThe design challenge was communicating a technical concept in a way that felt immediate and effortless.',
-    challenge: 'Cloud storage is a crowded category and most products lead with technical specs. WELX needed to communicate a simple, magical experience — plug in, it works — without getting lost in the noise. The landing page had to make the concept instantly clear.',
+    challenge: 'Cloud storage is a crowded category and most products lead with technical specs. WELX needed to communicate a simple, magical experience  plug in, it works  without getting lost in the noise. The landing page had to make the concept instantly clear.',
     solution: 'I led with the benefit, not the feature: "Turn Your USB Into a Personal Cloud Instantly." Clean dark aesthetic, step-by-step explainer animations, and a single focused CTA. The design removes friction from the concept before users even download the app.',
     approach: [
       { step: 'Messaging Strategy', desc: 'Defined the core value proposition: instant, no-setup personal cloud for music lovers.' },
@@ -376,7 +376,7 @@ export const PROJECTS: Project[] = [
     heroImg: '/assets/projects/welx/hero.png',
     screens: [
       { src: '/assets/projects/welx/screen-1.png', caption: 'Landing page hero & explainer' },
-      { src: '/assets/projects/welx/screen-2.png', caption: 'How it works — USB to cloud flow' },
+      { src: '/assets/projects/welx/screen-2.png', caption: 'How it works  USB to cloud flow' },
       { src: '/assets/projects/welx/screen-3.png', caption: 'Music library & streaming dashboard' },
     ],
   },
@@ -390,9 +390,9 @@ export const PROJECTS: Project[] = [
     duration: '1 month',
     industry: 'Personal Branding / Web',
     tools: ['Figma', 'Web Design', 'Portfolio Design', 'Branding'],
-    overview: 'Designed the personal portfolio website for Kamran Shekh, a full-stack web and mobile solutions expert with 10+ years of experience. The brief was a modern, professional site that communicates credibility and converts visitors into clients.\n\nThe design balances a clean light hero section with a dark services area — creating visual contrast that keeps the page engaging throughout.',
+    overview: 'Designed the personal portfolio website for Kamran Shekh, a full-stack web and mobile solutions expert with 10+ years of experience. The brief was a modern, professional site that communicates credibility and converts visitors into clients.\n\nThe design balances a clean light hero section with a dark services area  creating visual contrast that keeps the page engaging throughout.',
     challenge: 'Developer portfolios tend to look generic. The challenge was designing something that felt personal and memorable while remaining professional enough for enterprise clients. It also needed to showcase a broad range of technologies without looking overwhelming.',
-    solution: 'I designed a split-tone layout — light and airy hero with dark, focused services section. The tech stack logos add credibility at a glance. Clear typography hierarchy ensures the "Let\'s Talk" CTA stays prominent without feeling pushy.',
+    solution: 'I designed a split-tone layout  light and airy hero with dark, focused services section. The tech stack logos add credibility at a glance. Clear typography hierarchy ensures the "Let\'s Talk" CTA stays prominent without feeling pushy.',
     approach: [
       { step: 'Brand Direction', desc: 'Defined a professional-but-modern visual tone using purple as the primary accent.' },
       { step: 'Hero Section', desc: 'Designed the above-the-fold with name, title, tech stack logos, and dual CTAs.' },
@@ -448,11 +448,11 @@ export const PROJECTS: Project[] = [
     duration: '2 months',
     industry: 'EdTech / Digital Publishing',
     tools: ['Figma', 'Mobile UX', 'Content Design', 'Urdu Typography'],
-    overview: 'Namal is a digital reading platform for Urdu literature — novels, religious content, and audio translations. I designed the full mobile app experience, including the home library, content browsing, reading interface, and audio player.\n\nThe app serves a large Urdu-speaking audience that has had very limited access to quality digital reading experiences in their native language.',
+    overview: 'Namal is a digital reading platform for Urdu literature  novels, religious content, and audio translations. I designed the full mobile app experience, including the home library, content browsing, reading interface, and audio player.\n\nThe app serves a large Urdu-speaking audience that has had very limited access to quality digital reading experiences in their native language.',
     challenge: 'Designing for Urdu content presents unique challenges: right-to-left text, Arabic script, and readers who may be more comfortable with audio than text. The app needed to serve both traditional readers and those who prefer listening to content.',
     solution: 'I designed a bilingual-aware layout that handles RTL content gracefully. The home screen surfaces featured books prominently with countdown timers for upcoming releases. The audio player is accessible from anywhere in the reading flow.',
     approach: [
-      { step: 'Content Architecture', desc: 'Organised content into Novels, Islamic texts, and Audio — matching how users think about the categories.' },
+      { step: 'Content Architecture', desc: 'Organised content into Novels, Islamic texts, and Audio  matching how users think about the categories.' },
       { step: 'Home Library', desc: 'Designed the home screen with featured content, countdown timers, and category browsing.' },
       { step: 'Reading Experience', desc: 'Designed the in-app reader with adjustable text size, night mode, and bookmarking.' },
       { step: 'Audio Player', desc: 'Designed an integrated audio player for books with audio translations available.' },

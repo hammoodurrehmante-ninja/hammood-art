@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Work — Product Design Portfolio | 15 Projects',
+  title: 'Work  Product Design Portfolio | 15 Projects',
   description:
-    'Selected work by Hammood Ur Rehman — SaaS dashboards, ERP platforms, mobile apps, fintech, AI-powered products & full-stack dev using AI.',
+    'Selected work by Hammood Ur Rehman  SaaS dashboards, ERP platforms, mobile apps, fintech, AI-powered products & full-stack dev using AI.',
   alternates: { canonical: 'https://hammood.com/work' },
   openGraph: { url: 'https://hammood.com/work' },
 }
@@ -14,7 +14,7 @@ const PROJECTS = [
     slug: 'vedapure',
     title: 'VedaPure Wellness',
     cats: ['E-Commerce', 'UX/UI Design', 'Web Development'],
-    desc: 'Designed and built a full e-commerce experience from scratch. A high-fidelity Figma UI brought to life with React, Tailwind CSS, Node.js, and Neon Postgres — every screen crafted to feel premium and convert browsers into buyers.',
+    desc: 'Designed and built a full e-commerce experience from scratch. A high-fidelity Figma UI brought to life with React, Tailwind CSS, Node.js, and Neon Postgres  every screen crafted to feel premium and convert browsers into buyers.',
     tags: ['Figma', 'React', 'Tailwind CSS', 'Node.js', 'Neon DB'],
     thumb: '/assets/vedapure-card.webp',
     link: { label: 'Live Site ↗', href: 'https://www.vedhapure.com', external: true },
@@ -24,7 +24,7 @@ const PROJECTS = [
     slug: 'payvato',
     title: 'Payvato App & Dashboard',
     cats: ['Fintech', 'Digital Wallet'],
-    desc: 'A complete fintech product — mobile wallet app plus admin dashboard. Dark, clean UI with fast transaction flows and micro-animations designed to make P2P payments feel instant and trustworthy.',
+    desc: 'A complete fintech product  mobile wallet app plus admin dashboard. Dark, clean UI with fast transaction flows and micro-animations designed to make P2P payments feel instant and trustworthy.',
     tags: ['Figma', 'Mobile UI', 'P2P Payments', 'Dashboard'],
     thumb: '/assets/payvato-card.webp',
   },
@@ -32,7 +32,7 @@ const PROJECTS = [
     slug: 'protego',
     title: 'Protego Suite',
     cats: ['Enterprise SaaS', 'Security & Compliance'],
-    desc: 'Enterprise compliance is complex and messy — Protego needed it to feel manageable. Designed the full product: dense data tables, multi-step audit workflows, and role-based access controls.',
+    desc: 'Enterprise compliance is complex and messy  Protego needed it to feel manageable. Designed the full product: dense data tables, multi-step audit workflows, and role-based access controls.',
     tags: ['Figma', 'UX Research', 'Enterprise UI', 'Role-Based Access'],
     thumb: '/assets/protego-card.webp',
   },
@@ -40,7 +40,7 @@ const PROJECTS = [
     slug: 'nextlevel',
     title: 'NextLevel Platform',
     cats: ['Fintech', 'Product Design'],
-    desc: 'A digital real estate fintech platform built to simplify the home-buying journey. Multi-role dashboards for buyers, advisors, and agents — clear data layouts that cut through the complexity.',
+    desc: 'A digital real estate fintech platform built to simplify the home-buying journey. Multi-role dashboards for buyers, advisors, and agents  clear data layouts that cut through the complexity.',
     tags: ['Figma', 'Dashboard UX', 'Data Visualization', 'Multi-Role UI'],
     thumb: '/assets/nextlevel-card.webp',
   },
@@ -48,7 +48,7 @@ const PROJECTS = [
     slug: 'appeals-doctor',
     title: 'Appeals Doctor',
     cats: ['SaaS Platform', 'Amazon Seller Tools'],
-    desc: 'Amazon sellers lose thousands every day to account suspensions. Designed the full dashboard — structured case workflows, document tracking, and collaboration tools so sellers recover faster.',
+    desc: 'Amazon sellers lose thousands every day to account suspensions. Designed the full dashboard  structured case workflows, document tracking, and collaboration tools so sellers recover faster.',
     tags: ['Figma', 'Dashboard UX', 'Case Management', 'SaaS Workflows'],
     thumb: '/assets/appeals-doctor-card.webp',
   },
@@ -56,7 +56,7 @@ const PROJECTS = [
     slug: 'pixis-stellar',
     title: 'Pixis · Stellar',
     cats: ['AI Advertising', 'SaaS Dashboard'],
-    desc: 'Designed the Stellar dashboard for Pixis — an AI-driven ad automation platform. Clean, focused interfaces for complex campaign pipelines built to make AI-powered advertising feel effortless.',
+    desc: 'Designed the Stellar dashboard for Pixis  an AI-driven ad automation platform. Clean, focused interfaces for complex campaign pipelines built to make AI-powered advertising feel effortless.',
     tags: ['Figma', 'AI SaaS', 'Product Design', 'Design Systems'],
     thumb: '/assets/pixis-stellar-card.webp',
   },
@@ -88,7 +88,7 @@ const PROJECTS = [
     slug: 'fedposts',
     title: 'FedPosts',
     cats: ['GovTech', 'Marketplace'],
-    desc: 'A government-grade marketplace platform connecting federal buyers and vendors. Designed for clarity and compliance — streamlined procurement flows, vendor dashboards, and audit-ready reporting.',
+    desc: 'A government-grade marketplace platform connecting federal buyers and vendors. Designed for clarity and compliance  streamlined procurement flows, vendor dashboards, and audit-ready reporting.',
     tags: ['Figma', 'GovTech', 'Marketplace UX', 'Product Design'],
     thumb: '/assets/fedposts-card.webp',
   },
@@ -96,7 +96,7 @@ const PROJECTS = [
     slug: 'skcab',
     title: 'SKCab',
     cats: ['Transport', 'Mobile App'],
-    desc: 'A ride-hailing mobile app built for speed and simplicity. Designed the full passenger and driver experience — real-time tracking, fare estimation, and intuitive booking flows.',
+    desc: 'A ride-hailing mobile app built for speed and simplicity. Designed the full passenger and driver experience  real-time tracking, fare estimation, and intuitive booking flows.',
     tags: ['Figma', 'Mobile UX', 'Transport', 'Maps UI'],
     thumb: '/assets/skcab-card.webp',
   },
@@ -104,7 +104,7 @@ const PROJECTS = [
     slug: 'welx',
     title: 'WELX Cloud',
     cats: ['Cloud Storage', 'Web App'],
-    desc: 'A modern cloud storage and file management platform. Designed clean, intuitive interfaces for file uploads, sharing, and team collaboration — productivity without the clutter.',
+    desc: 'A modern cloud storage and file management platform. Designed clean, intuitive interfaces for file uploads, sharing, and team collaboration  productivity without the clutter.',
     tags: ['Figma', 'Cloud UX', 'Web App', 'Dashboard'],
     thumb: '/assets/welx-card.webp',
   },
@@ -112,7 +112,7 @@ const PROJECTS = [
     slug: 'kamran-shekh',
     title: 'Kamran Shekh',
     cats: ['Portfolio', 'Web Design'],
-    desc: 'Personal portfolio website for a creative professional. Designed a bold, minimal digital presence that puts work front and center — crafted to impress and convert visitors into clients.',
+    desc: 'Personal portfolio website for a creative professional. Designed a bold, minimal digital presence that puts work front and center  crafted to impress and convert visitors into clients.',
     tags: ['Figma', 'Web Design', 'Portfolio', 'UI Design'],
     thumb: '/assets/kamran-shekh-card.webp',
   },
@@ -120,7 +120,7 @@ const PROJECTS = [
     slug: 'ihealthchart',
     title: 'iHealthChart',
     cats: ['Healthcare', 'Mobile App'],
-    desc: 'A healthcare mobile app for tracking patient vitals and medical records. Designed for doctors and patients alike — clear data visualizations, appointment management, and secure health records.',
+    desc: 'A healthcare mobile app for tracking patient vitals and medical records. Designed for doctors and patients alike  clear data visualizations, appointment management, and secure health records.',
     tags: ['Figma', 'Healthcare UX', 'Mobile App', 'Data Viz'],
     thumb: '/assets/ihealthchart-card.webp',
   },
@@ -128,7 +128,7 @@ const PROJECTS = [
     slug: 'namal',
     title: 'Namal App',
     cats: ['E-Reading', 'Mobile App'],
-    desc: 'A digital reading app for Urdu fiction — bringing the beloved Namal novel series to mobile. Designed an immersive reading experience with clean typography, dark mode, and offline support.',
+    desc: 'A digital reading app for Urdu fiction  bringing the beloved Namal novel series to mobile. Designed an immersive reading experience with clean typography, dark mode, and offline support.',
     tags: ['Figma', 'Mobile UI', 'E-Reading', 'Typography'],
     thumb: '/assets/namal-card.webp',
   },
@@ -145,7 +145,7 @@ export default function WorkPage() {
           <span className="label">Selected Work</span>
           <h1 className="page-hero-title">Projects that<br />made a <em>difference.</em></h1>
           <p className="page-hero-desc">
-            7+ years of solving real design problems — from AI-powered ad platforms to enterprise ERP systems, mobile wallets, and telecom apps.
+            7+ years of solving real design problems  from AI-powered ad platforms to enterprise ERP systems, mobile wallets, and telecom apps.
           </p>
         </div>
       </div>

@@ -103,7 +103,7 @@ export default function AssetsPage() {
       >
         <div className="ad-upload-icon">🖼</div>
         <div className="ad-upload-title">{uploading ? 'Uploading…' : 'Drop files here or click to upload'}</div>
-        <div className="ad-upload-sub">PNG, JPG, SVG, GIF, WebP, PDF — uploads go to /assets/uploads/</div>
+        <div className="ad-upload-sub">PNG, JPG, SVG, GIF, WebP, PDF  uploads go to /assets/uploads/</div>
         <input ref={fileRef} type="file" multiple accept="image/*,.pdf,.svg" style={{ display: 'none' }}
           onChange={e => Array.from(e.target.files ?? []).forEach(uploadFile)} />
       </div>

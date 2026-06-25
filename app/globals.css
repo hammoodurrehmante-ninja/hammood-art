@@ -464,7 +464,7 @@ em  { font-style: normal; color: var(--accent); }
   user-select: none;
   white-space: nowrap;
 }
-/* HAMM = 4 chars, OOD = 3 chars — 4:3 ratio keeps visual widths equal */
+/* HAMM = 4 chars, OOD = 3 chars  4:3 ratio keeps visual widths equal */
 .hero-name-l1 { font-size: clamp(4rem, 24vw, 28rem); }
 .hero-name-l2 { font-size: clamp(5.3rem, 32vw, 37rem); }
 
@@ -1286,19 +1286,19 @@ em  { font-style: normal; color: var(--accent); }
 
 /* ─── 20. Responsive ────────────────────────────────────── */
 
-/* Touch targets — all interactive elements */
+/* Touch targets  all interactive elements */
 @media (hover: none) {
   .nav-link, .nav-cta-btn, .hero-cta, .hero-resume,
   .fw-btn, .ftr-contact-btn, .pd-back, .pd-live-btn { min-height: 44px; }
 }
 
-/* ── 1280px — Laptop ──────── */
+/* ── 1280px  Laptop ──────── */
 @media (max-width: 1280px) {
   .container { max-width: 100%; }
   .hero-heading  { font-size: clamp(1.9rem, 3vw, 3rem); }
 }
 
-/* ── 1100px — Small Laptop ── */
+/* ── 1100px  Small Laptop ── */
 @media (max-width: 1100px) {
   .about-grid      { grid-template-columns: 1fr; gap: 2.5rem; }
   .about-photo-wrap{ position: static; }
@@ -1309,7 +1309,7 @@ em  { font-style: normal; color: var(--accent); }
   .pd-overview-grid{ grid-template-columns: 1fr; gap: 3rem; }
 }
 
-/* ── 900px — Large Tablet ─── */
+/* ── 900px  Large Tablet ─── */
 @media (max-width: 900px) {
   .exp-item         { grid-template-columns: 140px 1fr; gap: 1.5rem; }
   .ftr-card         { padding: 2.5rem 2rem 3rem; }
@@ -1318,7 +1318,7 @@ em  { font-style: normal; color: var(--accent); }
   .projects-grid    { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ── 768px — Tablet Portrait ─ */
+/* ── 768px  Tablet Portrait ─ */
 @media (max-width: 768px) {
   :root { --gap: 60px; --pad: 1.25rem; }
 
@@ -1326,7 +1326,7 @@ em  { font-style: normal; color: var(--accent); }
   .nav-links, .nav-cta-btn { display: none; }
   .nav-hamburger { display: flex; }
 
-  /* Hero — single column stack */
+  /* Hero  single column stack */
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
@@ -1375,7 +1375,7 @@ em  { font-style: normal; color: var(--accent); }
   .ftr-heading      { font-size: clamp(1.8rem, 7vw, 3rem); }
 }
 
-/* ── 640px — Large Phone ──── */
+/* ── 640px  Large Phone ──── */
 @media (max-width: 640px) {
   :root { --gap: 52px; }
 
@@ -1410,7 +1410,7 @@ em  { font-style: normal; color: var(--accent); }
   .ftr-sub    { font-size: 0.875rem; }
 }
 
-/* ── 480px — Phone ─────────── */
+/* ── 480px  Phone ─────────── */
 @media (max-width: 480px) {
   :root { --gap: 44px; --pad: 1rem; }
 
@@ -1455,7 +1455,7 @@ em  { font-style: normal; color: var(--accent); }
   .ftr-contact-label { font-size: 0.82rem; }
 }
 
-/* ── 375px — Small Phone ──── */
+/* ── 375px  Small Phone ──── */
 @media (max-width: 375px) {
   :root { --gap: 36px; --pad: 0.875rem; }
 
@@ -1470,10 +1470,10 @@ em  { font-style: normal; color: var(--accent); }
 
   .nav-mobile .nav-link { font-size: 1.5rem; }
 
-  /* Stats — 4 cols to 2×2 grid */
+  /* Stats  4 cols to 2×2 grid */
   .about-stats { grid-template-columns: 1fr 1fr; }
 
-  /* Project meta bar — single col on very small */
+  /* Project meta bar  single col on very small */
   .pd-meta-row { grid-template-columns: 1fr 1fr; }
 }
 

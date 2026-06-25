@@ -4,7 +4,7 @@ import Ticker from '@/components/Ticker'
 import ProjectsCarousel from '@/components/ProjectsCarousel'
 
 export const metadata: Metadata = {
-  title: 'Lead Product Designer | UX/UI, Figma, SaaS & AI — Hammood Ur Rehman',
+  title: 'Lead Product Designer | UX/UI, Figma, SaaS & AI  Hammood Ur Rehman',
   description:
     'Lead Product Designer with 7+ years crafting SaaS dashboards, ERP platforms, mobile apps & AI-powered products. Expert in Figma, design systems & full-stack dev using AI. Based in Lahore, Pakistan.',
   alternates: { canonical: 'https://hammood.com' },

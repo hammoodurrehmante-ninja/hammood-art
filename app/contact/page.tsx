@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Hire Me — Let\'s Build Something Great',
+  title: 'Hire Me  Let\'s Build Something Great',
   description:
-    'Have a project in mind? Get in touch with Hammood Ur Rehman — Lead Product Designer specializing in SaaS, ERP, mobile apps, AI-powered products & full-stack dev using AI.',
+    'Have a project in mind? Get in touch with Hammood Ur Rehman  Lead Product Designer specializing in SaaS, ERP, mobile apps, AI-powered products & full-stack dev using AI.',
   alternates: { canonical: 'https://hammood.com/contact' },
   openGraph: { url: 'https://hammood.com/contact' },
 }

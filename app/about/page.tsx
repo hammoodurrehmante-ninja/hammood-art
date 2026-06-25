@@ -4,7 +4,7 @@ import Ticker from '@/components/Ticker'
 import Accordion from '@/components/Accordion'
 
 export const metadata: Metadata = {
-  title: 'About — 7+ Years Designing SaaS, ERP & AI Products',
+  title: 'About  7+ Years Designing SaaS, ERP & AI Products',
   description:
     '7+ years building SaaS dashboards, ERP platforms, mobile apps & AI-powered products. Learn about Hammood Ur Rehman\'s design process, experience, skills & full-stack dev using AI.',
   alternates: { canonical: 'https://hammood.com/about' },

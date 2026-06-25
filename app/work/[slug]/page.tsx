@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!project) return {}
   const url = `https://hammood.com/work/${slug}`
   return {
-    title: `${project.title} — ${project.role} Case Study`,
+    title: `${project.title}  ${project.role} Case Study`,
     description: `${project.tagline} ${project.industry} · ${project.duration} · Tools: ${project.tools.slice(0,4).join(', ')}.`,
     alternates: { canonical: url },
     openGraph: {
