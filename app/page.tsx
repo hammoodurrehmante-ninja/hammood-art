@@ -98,9 +98,9 @@ export default function Home() {
       {/* ── Stats ────────────────────────── */}
       <section className="section" style={{ paddingTop: '4rem', paddingBottom: '4rem', borderBottom: '1px solid var(--b1)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: 'var(--rad-lg)', overflow: 'hidden', boxShadow: '0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)' }}>
-            {STATS.map(({ num, lbl }) => (
-              <div key={lbl} style={{ background: 'rgba(255,255,255,0.035)', backdropFilter: 'blur(20px)', padding: '2rem 1.5rem', textAlign: 'center' }}>
+          <div className="reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: 'var(--rad-lg)', overflow: 'hidden', boxShadow: '0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)' }}>
+            {STATS.map(({ num, lbl }, i) => (
+              <div key={lbl} className={`reveal rd${i + 1}`} style={{ background: 'rgba(255,255,255,0.035)', backdropFilter: 'blur(20px)', padding: '2rem 1.5rem', textAlign: 'center' }}>
                 <div style={{ fontFamily: 'var(--f-head)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: 'var(--accent)', lineHeight: 1, textShadow: '0 0 24px rgba(255,0,34,0.5)' }}>{num}</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--t3)', marginTop: '0.4rem', fontWeight: 500 }}>{lbl}</div>
               </div>
