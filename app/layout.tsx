@@ -93,7 +93,7 @@ const jsonLd = {
       image: `${BASE}/assets/images/hammood.png`,
       jobTitle: 'Lead Product Designer',
       description: 'Lead Product Designer with 7+ years crafting SaaS dashboards, ERP platforms, mobile apps & AI-powered products.',
-      email: 'hire@hammood.com',
+      email: 'hammoodchand@gmail.com',
       address: { '@type': 'PostalAddress', addressLocality: 'Lahore', addressCountry: 'PK' },
       sameAs: [
         'https://www.linkedin.com/in/hammood-ur-rehman/',
@@ -118,7 +118,7 @@ const jsonLd = {
       provider: { '@id': `${BASE}/#person` },
       serviceType: ['UX/UI Design', 'Product Design', 'Full-stack Dev using AI', 'Design Systems', 'SaaS Dashboard Design'],
       areaServed: 'Worldwide',
-      email: 'hire@hammood.com',
+      email: 'hammoodchand@gmail.com',
     },
   ],
 }

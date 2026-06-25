@@ -29,8 +29,8 @@ export default function ContactPage() {
             {/* Left: Info */}
             <div className="contact-info-col reveal">
               <span className="label">Direct email</span>
-              <a href="mailto:hire@hammood.com?subject=Project%20Inquiry" className="contact-email-link">
-                hire@hammood.com →
+              <a href="mailto:hammoodchand@gmail.com?subject=Project%20Inquiry" className="contact-email-link">
+                hammoodchand@gmail.com →
               </a>
 
               <span className="label" style={{ marginBottom: '1rem' }}>Connect</span>

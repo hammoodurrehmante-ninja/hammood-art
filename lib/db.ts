@@ -60,7 +60,7 @@ export async function initDb(): Promise<void> {
     if (parseInt(settingsCount.rows[0].count) === 0) {
       await client.query('INSERT INTO settings (id, data) VALUES (1, $1)', [
         JSON.stringify({
-          contact: { email: 'hire@hammood.com', phone: '+923302616738', location: 'Lahore, Pakistan' },
+          contact: { email: 'hammoodchand@gmail.com', phone: '+923302616738', location: 'Lahore, Pakistan' },
           social: { linkedin: 'https://www.linkedin.com/in/hammood-ur-rehman/', behance: 'https://www.behance.net/hammood', twitter: '', instagram: '', github: '' },
           whatsapp: { enabled: true, number: '923302616738', position: 'bottom-left' },
           site: { name: 'Hammood Ur Rehman', tagline: 'Lead Product Designer', domain: 'https://hammood.com', resumeUrl: '/assets/resume/Hammood-Resume.pdf' },

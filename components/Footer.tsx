@@ -8,8 +8,8 @@ const CONTACTS = [
         <path d="M22 6l-10 7L2 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    label: 'hire@hammood.com',
-    href: 'mailto:hire@hammood.com',
+    label: 'hammoodchand@gmail.com',
+    href: 'mailto:hammoodchand@gmail.com',
   },
   {
     icon: (
