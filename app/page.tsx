@@ -24,21 +24,21 @@ const STATS = [
 ]
 
 const ALL_PROJECTS = [
-  { title: 'VedaPure',        cat: 'E-Commerce · Web',        date: 'Jan 2025', slug: 'vedapure',       bg: 'url(/assets/vedapure-card.jpg)' },
-  { title: 'Payvato',         cat: 'Fintech · Mobile App',    date: 'Mar 2025', slug: 'payvato',        bg: 'url(/assets/payvato-card.jpg)' },
-  { title: 'Protego',         cat: 'Security · SaaS',         date: 'Jun 2024', slug: 'protego',        bg: 'url(/assets/protego-card.jpg)' },
-  { title: 'NextLevel',       cat: 'Fintech · Dashboard',     date: 'Sep 2024', slug: 'nextlevel',      bg: 'url(/assets/nextlevel-card.jpg)' },
-  { title: 'Appeals Doctor',  cat: 'SaaS · Amazon',           date: 'Dec 2024', slug: 'appeals-doctor', bg: 'url(/assets/appeals-doctor-card.jpg)' },
-  { title: 'Pixis Stellar',   cat: 'Ad Tech · SaaS',          date: 'Feb 2025', slug: 'pixis-stellar',  bg: 'url(/assets/pixis-stellar-card.jpg)' },
-  { title: 'Mau Brands',      cat: 'Amazon Analytics · SaaS', date: 'Jan 2025', slug: 'mau-brands',     bg: 'url(/assets/mau-brands-card.jpg)' },
+  { title: 'VedaPure',        cat: 'E-Commerce · Web',        date: 'Jan 2025', slug: 'vedapure',       bg: 'url(/assets/vedapure-card.webp)' },
+  { title: 'Payvato',         cat: 'Fintech · Mobile App',    date: 'Mar 2025', slug: 'payvato',        bg: 'url(/assets/payvato-card.webp)' },
+  { title: 'Protego',         cat: 'Security · SaaS',         date: 'Jun 2024', slug: 'protego',        bg: 'url(/assets/protego-card.webp)' },
+  { title: 'NextLevel',       cat: 'Fintech · Dashboard',     date: 'Sep 2024', slug: 'nextlevel',      bg: 'url(/assets/nextlevel-card.webp)' },
+  { title: 'Appeals Doctor',  cat: 'SaaS · Amazon',           date: 'Dec 2024', slug: 'appeals-doctor', bg: 'url(/assets/appeals-doctor-card.webp)' },
+  { title: 'Pixis Stellar',   cat: 'Ad Tech · SaaS',          date: 'Feb 2025', slug: 'pixis-stellar',  bg: 'url(/assets/pixis-stellar-card.webp)' },
+  { title: 'Mau Brands',      cat: 'Amazon Analytics · SaaS', date: 'Jan 2025', slug: 'mau-brands',     bg: 'url(/assets/mau-brands-card.webp)' },
   { title: 'Gluon ERP',       cat: 'ERP · SaaS',              date: 'Nov 2023', slug: 'gluon-erp',      bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
-  { title: 'QGolf VPN',       cat: 'VPN · Mobile',            date: 'Apr 2024', slug: 'qgolf-vpn',      bg: 'url(/assets/qgolf-vpn-card.jpg)' },
-  { title: 'FedPosts',        cat: 'GovTech · Marketplace',   date: 'Aug 2024', slug: 'fedposts',       bg: 'url(/assets/fedposts-card.jpg)' },
-  { title: 'SKCab',           cat: 'Transport · Mobile',      date: 'Oct 2024', slug: 'skcab',          bg: 'url(/assets/skcab-card.jpg)' },
-  { title: 'WELX Cloud',      cat: 'Cloud Storage · Web',     date: 'Feb 2025', slug: 'welx',           bg: 'url(/assets/welx-card.jpg)' },
-  { title: 'Kamran Shekh',    cat: 'Portfolio · Web',         date: 'Jul 2024', slug: 'kamran-shekh',   bg: 'url(/assets/kamran-shekh-card.jpg)' },
-  { title: 'iHealthChart',    cat: 'Healthcare · Mobile',     date: 'Mar 2025', slug: 'ihealthchart',   bg: 'url(/assets/ihealthchart-card.jpg)' },
-  { title: 'Namal App',       cat: 'E-Reading · Mobile',      date: 'Nov 2024', slug: 'namal',          bg: 'url(/assets/namal-card.jpg)' },
+  { title: 'QGolf VPN',       cat: 'VPN · Mobile',            date: 'Apr 2024', slug: 'qgolf-vpn',      bg: 'url(/assets/qgolf-vpn-card.webp)' },
+  { title: 'FedPosts',        cat: 'GovTech · Marketplace',   date: 'Aug 2024', slug: 'fedposts',       bg: 'url(/assets/fedposts-card.webp)' },
+  { title: 'SKCab',           cat: 'Transport · Mobile',      date: 'Oct 2024', slug: 'skcab',          bg: 'url(/assets/skcab-card.webp)' },
+  { title: 'WELX Cloud',      cat: 'Cloud Storage · Web',     date: 'Feb 2025', slug: 'welx',           bg: 'url(/assets/welx-card.webp)' },
+  { title: 'Kamran Shekh',    cat: 'Portfolio · Web',         date: 'Jul 2024', slug: 'kamran-shekh',   bg: 'url(/assets/kamran-shekh-card.webp)' },
+  { title: 'iHealthChart',    cat: 'Healthcare · Mobile',     date: 'Mar 2025', slug: 'ihealthchart',   bg: 'url(/assets/ihealthchart-card.webp)' },
+  { title: 'Namal App',       cat: 'E-Reading · Mobile',      date: 'Nov 2024', slug: 'namal',          bg: 'url(/assets/namal-card.webp)' },
 ]
 
 export default function Home() {
