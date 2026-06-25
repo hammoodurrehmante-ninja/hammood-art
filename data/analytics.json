@@ -6,11 +6,13 @@
     "/admin/projects/new": 1,
     "/admin/projects/vedapure": 1,
     "/admin/assets": 1,
-    "/admin/settings": 2
+    "/admin/settings": 2,
+    "/": 1
   },
   "dailyViews": {
-    "2026-06-24": 10
+    "2026-06-24": 10,
+    "2026-06-25": 1
   },
-  "totalViews": 10,
+  "totalViews": 11,
   "uniqueVisitors": 0
 }
