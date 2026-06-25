@@ -30,10 +30,8 @@ export default function LoginPage() {
     <div className="ad-login-wrap">
       <div className="ad-login-box">
         <div className="ad-login-logo">
-          <div className="ad-login-logomark">H</div>
-          <div>
-            <div className="ad-login-title">Admin Panel</div>
-            <div className="ad-login-sub">Sign in to manage your portfolio</div>
+          <div className="ad-login-logomark">
+            HUR<span style={{ color: 'var(--ad-accent)' }}>.</span>
           </div>
         </div>
 
@@ -68,10 +66,6 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <p style={{ marginTop: 20, fontSize: 11, color: 'var(--ad-t3)', textAlign: 'center' }}>
-          Default: <code style={{ color: 'var(--ad-t2)' }}>hammood / admin2025</code><br />
-          Set ADMIN_USERNAME + ADMIN_PASSWORD env vars to change.
-        </p>
       </div>
     </div>
   )

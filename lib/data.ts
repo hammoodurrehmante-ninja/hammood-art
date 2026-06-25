@@ -1,44 +1,26 @@
-import fs from 'fs'
-import path from 'path'
+import { dbGetSettings, dbSaveSettings, dbGetAnalytics, dbTrackView } from './db'
 
-const DATA_DIR = path.join(process.cwd(), 'data')
-
-export function readJson<T>(filename: string): T {
-  const file = path.join(DATA_DIR, filename)
-  const raw = fs.readFileSync(file, 'utf-8')
-  return JSON.parse(raw) as T
+export type Settings = {
+  contact: { email: string; phone: string; location: string }
+  social: { linkedin: string; behance: string; twitter: string; instagram: string; github: string }
+  whatsapp: { enabled: boolean; number: string; position: string }
+  site: { name: string; tagline: string; domain: string; resumeUrl: string }
 }
 
-export function writeJson(filename: string, data: unknown) {
-  const file = path.join(DATA_DIR, filename)
-  fs.writeFileSync(file, JSON.stringify(data, null, 2), 'utf-8')
+export async function readSettings(): Promise<Settings> {
+  return dbGetSettings() as Promise<Settings>
 }
 
-export function readSettings() {
-  return readJson<{
-    contact: { email: string; phone: string; location: string }
-    social: { linkedin: string; behance: string; twitter: string; instagram: string; github: string }
-    whatsapp: { enabled: boolean; number: string; position: string }
-    site: { name: string; tagline: string; domain: string; resumeUrl: string }
-  }>('settings.json')
+export async function writeSettings(data: Settings): Promise<void> {
+  await dbSaveSettings(data)
 }
 
-export function readAnalytics() {
-  return readJson<{
-    pageViews: Record<string, number>
-    dailyViews: Record<string, number>
-    totalViews: number
-    uniqueVisitors: number
-  }>('analytics.json')
+export async function readAnalytics() {
+  return dbGetAnalytics()
 }
 
-export function trackView(pathname: string) {
+export async function trackView(pathname: string): Promise<void> {
   try {
-    const data = readAnalytics()
-    data.totalViews = (data.totalViews || 0) + 1
-    data.pageViews[pathname] = (data.pageViews[pathname] || 0) + 1
-    const today = new Date().toISOString().slice(0, 10)
-    data.dailyViews[today] = (data.dailyViews[today] || 0) + 1
-    writeJson('analytics.json', data)
+    await dbTrackView(pathname)
   } catch {}
 }

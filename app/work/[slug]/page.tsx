@@ -11,7 +11,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const project = getProject(slug)
+  const project = await getProject(slug)
   if (!project) return {}
   const url = `https://hammood.com/work/${slug}`
   return {
@@ -29,9 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProjectDetailPage({ params }: Props) {
   const { slug } = await params
-  const project = getProject(slug)
+  const project = await getProject(slug)
   if (!project) notFound()
-  const next = getNextProject(slug)
+  const next = await getNextProject(slug)
 
   const durationNum = project.duration.match(/\d+/)?.[0] ?? '3'
   const screensMatch = project.outcome.match(/(\d+)\+?\s*screen/i)
