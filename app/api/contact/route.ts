@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Pool } from 'pg'
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL })
 
@@ -54,20 +54,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Failed to save message. Please try again.' }, { status: 500 })
   }
 
-  if (
-    process.env.EMAIL_USER &&
-    process.env.EMAIL_PASS &&
-    process.env.EMAIL_USER !== 'your-gmail@gmail.com'
-  ) {
+  if (process.env.RESEND_API_KEY) {
     try {
-      const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
-      })
-      await transporter.sendMail({
-        from:    `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+      const resend = new Resend(process.env.RESEND_API_KEY)
+      await resend.emails.send({
+        from:    'Portfolio Contact <onboarding@resend.dev>',
         replyTo: clean.email,
-        to:      process.env.EMAIL_USER,
+        to:      'hammoodchand@gmail.com',
         subject: `[Portfolio] ${clean.subject}`,
         html: `
           <h2 style="color:#FF0022">New message from your portfolio</h2>
