@@ -24,15 +24,15 @@ const STATS = [
 ]
 
 const ALL_PROJECTS = [
-  { title: 'VedaPure',        cat: 'E-Commerce · Web',      date: 'Jan 2025', slug: 'vedapure',       bg: 'linear-gradient(145deg, #051a05 0%, #0d3a10 50%, #1a5c1a 100%)' },
-  { title: 'Payvato',         cat: 'Fintech · Mobile App',  date: 'Mar 2025', slug: 'payvato',        bg: 'linear-gradient(145deg, #1a0010 0%, #600010 40%, #FF0022 100%)' },
-  { title: 'Protego',         cat: 'Security · SaaS',       date: 'Jun 2024', slug: 'protego',        bg: 'linear-gradient(145deg, #0D0A14 0%, #3a0010 50%, #800018 100%)' },
-  { title: 'NextLevel',       cat: 'Fintech · Dashboard',   date: 'Sep 2024', slug: 'nextlevel',      bg: 'linear-gradient(145deg, #08081f 0%, #14144a 50%, #1e1e8a 100%)' },
-  { title: 'Appeals Doctor',  cat: 'SaaS · Amazon',         date: 'Dec 2024', slug: 'appeals-doctor', bg: 'linear-gradient(145deg, #0a0806 0%, #2a1a08 50%, #5a3010 100%)' },
-  { title: 'Pixis Stellar',   cat: 'Ad Tech · SaaS',        date: 'Feb 2025', slug: 'pixis-stellar',  bg: 'linear-gradient(145deg, #050518 0%, #0a0a3a 50%, #12126e 100%)' },
-  { title: 'Etisalat',        cat: 'Telecom · Enterprise',  date: 'Aug 2023', slug: 'etisalat',       bg: 'linear-gradient(145deg, #001810 0%, #003828 50%, #006040 100%)' },
-  { title: 'Gluon ERP',       cat: 'ERP · SaaS',            date: 'Nov 2023', slug: 'gluon-erp',      bg: 'linear-gradient(145deg, #1a0600 0%, #4a1200 50%, #FF2200 100%)' },
-  { title: 'QGolf VPN',       cat: 'VPN · Mobile',          date: 'Apr 2024', slug: 'qgolf-vpn',      bg: 'linear-gradient(145deg, #001818 0%, #003838 50%, #005c5c 100%)' },
+  { title: 'VedaPure',        cat: 'E-Commerce · Web',      date: 'Jan 2025', slug: 'vedapure',       bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'Payvato',         cat: 'Fintech · Mobile App',  date: 'Mar 2025', slug: 'payvato',        bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'Protego',         cat: 'Security · SaaS',       date: 'Jun 2024', slug: 'protego',        bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'NextLevel',       cat: 'Fintech · Dashboard',   date: 'Sep 2024', slug: 'nextlevel',      bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'Appeals Doctor',  cat: 'SaaS · Amazon',         date: 'Dec 2024', slug: 'appeals-doctor', bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'Pixis Stellar',   cat: 'Ad Tech · SaaS',        date: 'Feb 2025', slug: 'pixis-stellar',  bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'Etisalat',        cat: 'Telecom · Enterprise',  date: 'Aug 2023', slug: 'etisalat',       bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'Gluon ERP',       cat: 'ERP · SaaS',            date: 'Nov 2023', slug: 'gluon-erp',      bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
+  { title: 'QGolf VPN',       cat: 'VPN · Mobile',          date: 'Apr 2024', slug: 'qgolf-vpn',      bg: 'linear-gradient(145deg, #0e0e0e 0%, #181818 100%)' },
 ]
 
 export default function Home() {
