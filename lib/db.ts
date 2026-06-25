@@ -5,8 +5,16 @@ let pool: Pool | null = null
 
 function getPool(): Pool {
   if (!pool) {
+    let connectionString = process.env.DATABASE_URL || ''
+    try {
+      const url = new URL(connectionString)
+      url.searchParams.delete('sslmode')
+      url.searchParams.delete('channel_binding')
+      connectionString = url.toString()
+    } catch {}
     pool = new Pool({
-      connectionString: process.env.DATABASE_URL,
+      connectionString,
+      ssl: { rejectUnauthorized: false },
       max: 10,
     })
   }
